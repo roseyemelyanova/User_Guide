@@ -1,0 +1,2221 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+   <xfdu:XFDU xmlns:xfdu="urn:ccsds:schema:xfdu:1" xmlns:sentinel-safe="http://www.esa.int/safe/sentinel/1.1" xmlns:gml="http://www.opengis.net/gml" xmlns:sentinel3="http://www.esa.int/safe/sentinel/sentinel-3/1.0" xmlns:slstr="http://www.esa.int/safe/sentinel/sentinel-3/slstr/1.0" version="esa/safe/sentinel/sentinel-3/slstr/level-1/1.0">
+      <informationPackageMap>
+         <xfdu:contentUnit ID="packageUnit" unitType="Information Package" textInfo="SENTINEL-3 SLSTR Level 1 package" dmdID="acquisitionPeriod platform measurementOrbitReference measurementFrameSet measurementQualityInformation generalProductInformation slstrProductInformation processing" pdiID="processing">
+            <xfdu:contentUnit  ID="ADFUnit" unitType="Annotation Data Unit" textInfo="VISCAL data obtained from input VISCAL ADF">
+               <dataObjectPointer dataObjectID="ADFData"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_CARTESIAN_AN_Unit" unitType="Annotation Data Unit" textInfo="Full resolution cartesian coordinates for the A, B orTDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_CARTESIAN_AN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_CARTESIAN_AO_Unit" unitType="Annotation Data Unit" textInfo="Full resolution cartesian coordinates for the A, B orTDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_CARTESIAN_AO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_CARTESIAN_BN_Unit" unitType="Annotation Data Unit" textInfo="Full resolution cartesian coordinates for the A, B orTDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_CARTESIAN_BN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_CARTESIAN_BO_Unit" unitType="Annotation Data Unit" textInfo="Full resolution cartesian coordinates for the A, B orTDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_CARTESIAN_BO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_CARTESIAN_CN_Unit" unitType="Annotation Data Unit" textInfo="Full resolution cartesian coordinates for the A, B orTDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_CARTESIAN_CN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_CARTESIAN_CO_Unit" unitType="Annotation Data Unit" textInfo="Full resolution cartesian coordinates for the A, B orTDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_CARTESIAN_CO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_CARTESIAN_IN_Unit" unitType="Annotation Data Unit" textInfo="Full resolution cartesian coordinates for the A, B orTDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_CARTESIAN_IN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_CARTESIAN_IO_Unit" unitType="Annotation Data Unit" textInfo="Full resolution cartesian coordinates for the A, B orTDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_CARTESIAN_IO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_CARTESIAN_TX_Unit" unitType="Annotation Data Unit" textInfo="Full resolution cartesian coordinates for the A, B orTDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_CARTESIAN_TX_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_F1_BT_IN_Unit" unitType="Measurement Data Unit" textInfo="Gridded pixel brightness temperature for channel F1 (1km TIR grid, nadir view)" dmdID="SLSTR_F1_QUALITY_IN_Annotation SLSTR_FLAGS_IN_Annotation SLSTR_INDICES_IN_Annotation SLSTR_GEODETIC_IN_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_IN_Annotation SLSTR_GEOMETRY_TN_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_F1_BT_IN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_F1_BT_IO_Unit" unitType="Measurement Data Unit" textInfo="Gridded pixel brightness temperature for channel F1 (1km TIR grid, oblique view)" dmdID="SLSTR_F1_QUALITY_IO_Annotation SLSTR_FLAGS_IO_Annotation SLSTR_INDICES_IO_Annotation SLSTR_GEODETIC_IO_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_IO_Annotation SLSTR_GEOMETRY_TO_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_F1_BT_IO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_F1_QUALITY_IN_Unit" unitType="Annotation Data Unit" textInfo="Thermal Infrared quality annotations for channel F1 (1km TIR grid, nadir view)">
+               <dataObjectPointer dataObjectID="SLSTR_F1_QUALITY_IN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_F1_QUALITY_IO_Unit" unitType="Annotation Data Unit" textInfo="Thermal Infrared quality annotations for channel F1 (1km TIR grid, oblique view)">
+               <dataObjectPointer dataObjectID="SLSTR_F1_QUALITY_IO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_F2_BT_IN_Unit" unitType="Measurement Data Unit" textInfo="Gridded pixel brightness temperature for channel F2 (1km TIR grid, nadir view)" dmdID="SLSTR_F2_QUALITY_IN_Annotation SLSTR_FLAGS_IN_Annotation SLSTR_INDICES_IN_Annotation SLSTR_GEODETIC_IN_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_IN_Annotation SLSTR_GEOMETRY_TN_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_F2_BT_IN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_F2_BT_IO_Unit" unitType="Measurement Data Unit" textInfo="Gridded pixel brightness temperature for channel F1 (1km TIR grid, oblique view)" dmdID="SLSTR_F2_QUALITY_IO_Annotation SLSTR_FLAGS_IO_Annotation SLSTR_INDICES_IO_Annotation SLSTR_GEODETIC_IO_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_IO_Annotation SLSTR_GEOMETRY_TO_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_F2_BT_IO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_F2_QUALITY_IN_Unit" unitType="Annotation Data Unit" textInfo="Thermal Infrared quality annotations for channel F2 (1km TIR grid, nadir view)">
+               <dataObjectPointer dataObjectID="SLSTR_F2_QUALITY_IN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_F2_QUALITY_IO_Unit" unitType="Annotation Data Unit" textInfo="Thermal Infrared quality annotations for channel F2 (1km TIR grid, oblique view)">
+               <dataObjectPointer dataObjectID="SLSTR_F2_QUALITY_IO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_FLAGS_AN_Unit" unitType="Annotation Data Unit" textInfo="Global flags for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_FLAGS_AN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_FLAGS_AO_Unit" unitType="Annotation Data Unit" textInfo="Global flags for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_FLAGS_AO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_FLAGS_BN_Unit" unitType="Annotation Data Unit" textInfo="Global flags for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_FLAGS_BN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_FLAGS_BO_Unit" unitType="Annotation Data Unit" textInfo="Global flags for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_FLAGS_BO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_FLAGS_CN_Unit" unitType="Annotation Data Unit" textInfo="Global flags for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_FLAGS_CN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_FLAGS_CO_Unit" unitType="Annotation Data Unit" textInfo="Global flags for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_FLAGS_CO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_FLAGS_IN_Unit" unitType="Annotation Data Unit" textInfo="Global flags for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_FLAGS_IN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_FLAGS_IO_Unit" unitType="Annotation Data Unit" textInfo="Global flags for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_FLAGS_IO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_GEODETIC_AN_Unit" unitType="Annotation Data Unit" textInfo="Full resolution geodetic coordinates for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_GEODETIC_AN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_GEODETIC_AO_Unit" unitType="Annotation Data Unit" textInfo="Full resolution geodetic coordinates for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_GEODETIC_AO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_GEODETIC_BN_Unit" unitType="Annotation Data Unit" textInfo="Full resolution geodetic coordinates for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_GEODETIC_BN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_GEODETIC_BO_Unit" unitType="Annotation Data Unit" textInfo="Full resolution geodetic coordinates for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_GEODETIC_BO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_GEODETIC_CN_Unit" unitType="Annotation Data Unit" textInfo="Full resolution geodetic coordinates for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_GEODETIC_CN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_GEODETIC_CO_Unit" unitType="Annotation Data Unit" textInfo="Full resolution geodetic coordinates for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_GEODETIC_CO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_GEODETIC_IN_Unit" unitType="Annotation Data Unit" textInfo="Full resolution geodetic coordinates for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_GEODETIC_IN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_GEODETIC_IO_Unit" unitType="Annotation Data Unit" textInfo="Full resolution geodetic coordinates for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_GEODETIC_IO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_GEODETIC_TX_Unit" unitType="Annotation Data Unit" textInfo="Full resolution geodetic coordinates for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_GEODETIC_TX_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_GEOMETRY_TN_Unit" unitType="Annotation Data Unit" textInfo="solar and satellite geometry annotations, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_GEOMETRY_TN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_GEOMETRY_TO_Unit" unitType="Annotation Data Unit" textInfo="solar and satellite geometry annotations, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_GEOMETRY_TO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_INDICES_AN_Unit" unitType="Annotation Data Unit" textInfo="Scan, pixel and detector annotations for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_INDICES_AN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_INDICES_AO_Unit" unitType="Annotation Data Unit" textInfo="Scan, pixel and detector annotations for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_INDICES_AO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_INDICES_BN_Unit" unitType="Annotation Data Unit" textInfo="Scan, pixel and detector annotations for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_INDICES_BN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_INDICES_BO_Unit" unitType="Annotation Data Unit" textInfo="Scan, pixel and detector annotations for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_INDICES_BO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_INDICES_CN_Unit" unitType="Annotation Data Unit" textInfo="Scan, pixel and detector annotations for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_INDICES_CN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_INDICES_CO_Unit" unitType="Annotation Data Unit" textInfo="Scan, pixel and detector annotations for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_INDICES_CO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_INDICES_IN_Unit" unitType="Annotation Data Unit" textInfo="Scan, pixel and detector annotations for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_INDICES_IN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_INDICES_IO_Unit" unitType="Annotation Data Unit" textInfo="Scan, pixel and detector annotations for the A, B or TDI stripe grid, nadir or oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_INDICES_IO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_MET_TX_Unit" unitType="Annotation Data Unit" textInfo="Meteorological parameters regridded onto the tie points">
+               <dataObjectPointer dataObjectID="SLSTR_MET_TX_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S1_QUALITY_AN_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S1 (A stripe grid, nadir view)">
+               <dataObjectPointer dataObjectID="SLSTR_S1_QUALITY_AN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S1_QUALITY_AO_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S1 (A stripe grid, oblique view)">
+               <dataObjectPointer dataObjectID="SLSTR_S1_QUALITY_AO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S1_RAD_AN_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S1 (A stripe grid, nadir view)" dmdID="SLSTR_S1_QUALITY_AN_Annotation SLSTR_FLAGS_AN_Annotation SLSTR_INDICES_AN_Annotation SLSTR_GEODETIC_AN_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_AN_Annotation SLSTR_TIME_A_Annotation SLSTR_GEOMETRY_TN_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S1_RAD_AN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S1_RAD_AO_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S1 (A stripe grid, oblique view)" dmdID="SLSTR_S1_QUALITY_AO_Annotation SLSTR_FLAGS_AN_Annotation SLSTR_INDICES_AO_Annotation SLSTR_GEODETIC_AO_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_AO_Annotation SLSTR_TIME_A_Annotation SLSTR_GEOMETRY_TO_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S1_RAD_AO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S2_QUALITY_AN_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S2 (A stripe grid, nadir view)">
+               <dataObjectPointer dataObjectID="SLSTR_S2_QUALITY_AN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S2_QUALITY_AO_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S2 (A stripe grid, oblique view)">
+               <dataObjectPointer dataObjectID="SLSTR_S2_QUALITY_AO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S2_RAD_AN_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S2 (A stripe grid, nadir view)" dmdID="SLSTR_S2_QUALITY_AN_Annotation SLSTR_FLAGS_AN_Annotation SLSTR_INDICES_AN_Annotation SLSTR_GEODETIC_AN_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_AN_Annotation SLSTR_TIME_A_Annotation SLSTR_GEOMETRY_TN_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S2_RAD_AN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S2_RAD_AO_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S2 (A stripe grid, oblique view)" dmdID="SLSTR_S2_QUALITY_AO_Annotation SLSTR_FLAGS_AN_Annotation SLSTR_INDICES_AO_Annotation SLSTR_GEODETIC_AO_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_AO_Annotation SLSTR_TIME_A_Annotation SLSTR_GEOMETRY_TO_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S2_RAD_AO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S3_QUALITY_AN_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S3 (A stripe grid, nadir view)">
+               <dataObjectPointer dataObjectID="SLSTR_S3_QUALITY_AN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S3_QUALITY_AO_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S3 (A stripe grid, oblique view)">
+               <dataObjectPointer dataObjectID="SLSTR_S3_QUALITY_AO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S3_RAD_AN_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S3 (A stripe grid, nadir view)" dmdID="SLSTR_S3_QUALITY_AN_Annotation SLSTR_FLAGS_AN_Annotation SLSTR_INDICES_AN_Annotation SLSTR_GEODETIC_AN_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_AN_Annotation SLSTR_TIME_A_Annotation SLSTR_GEOMETRY_TN_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S3_RAD_AN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S3_RAD_AO_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S3 (A stripe grid, oblique view)" dmdID="SLSTR_S3_QUALITY_AO_Annotation SLSTR_FLAGS_AN_Annotation SLSTR_INDICES_AO_Annotation SLSTR_GEODETIC_AO_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_AO_Annotation SLSTR_TIME_A_Annotation SLSTR_GEOMETRY_TO_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S3_RAD_AO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S4_QUALITY_AN_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S4 (A stripe grid, nadir view)">
+               <dataObjectPointer dataObjectID="SLSTR_S4_QUALITY_AN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S4_QUALITY_AO_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S4 (A stripe grid, oblique view)">
+               <dataObjectPointer dataObjectID="SLSTR_S4_QUALITY_AO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S4_QUALITY_BN_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S4 (B stripe grid, nadir view)">
+               <dataObjectPointer dataObjectID="SLSTR_S4_QUALITY_BN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S4_QUALITY_BO_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S4 (B stripe grid, oblique view)">
+               <dataObjectPointer dataObjectID="SLSTR_S4_QUALITY_BO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S4_QUALITY_CN_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S4 (TDI stripe grid, nadir view)">
+               <dataObjectPointer dataObjectID="SLSTR_S4_QUALITY_CN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S4_QUALITY_CO_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S4 (TDI stripe grid, oblique view)">
+               <dataObjectPointer dataObjectID="SLSTR_S4_QUALITY_CO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S4_RAD_AN_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S4 (A stripe grid, nadir view)" dmdID="SLSTR_S4_QUALITY_AN_Annotation SLSTR_FLAGS_AN_Annotation SLSTR_INDICES_AN_Annotation SLSTR_GEODETIC_AN_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_AN_Annotation SLSTR_TIME_A_Annotation SLSTR_GEOMETRY_TN_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S4_RAD_AN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S4_RAD_AO_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S4 (A stripe grid, oblique view)" dmdID="SLSTR_S4_QUALITY_AO_Annotation SLSTR_FLAGS_AN_Annotation SLSTR_INDICES_AO_Annotation SLSTR_GEODETIC_AO_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_AO_Annotation SLSTR_GEOMETRY_TO_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S4_RAD_AO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S4_RAD_BN_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S4 (B stripe grid, nadir view)" dmdID="SLSTR_S4_QUALITY_BN_Annotation SLSTR_FLAGS_BN_Annotation SLSTR_INDICES_BN_Annotation SLSTR_GEODETIC_BN_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_BN_Annotation SLSTR_TIME_B_Annotation SLSTR_GEOMETRY_TN_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S4_RAD_BN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S4_RAD_BO_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S4 (B stripe grid, oblique view)" dmdID="SLSTR_S4_QUALITY_BO_Annotation SLSTR_FLAGS_BO_Annotation SLSTR_INDICES_BO_Annotation SLSTR_GEODETIC_BO_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_BO_Annotation SLSTR_GEOMETRY_TO_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S4_RAD_BO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S4_RAD_CN_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S4 (TDI stripe grid, nadir view)" dmdID="SLSTR_S4_QUALITY_CN_Annotation SLSTR_FLAGS_CN_Annotation SLSTR_INDICES_CN_Annotation SLSTR_GEODETIC_CN_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_CN_Annotation SLSTR_TIME_C_Annotation SLSTR_GEOMETRY_TN_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S4_RAD_CN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S4_RAD_CO_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S4 (TDI stripe grid, oblique view)" dmdID="SLSTR_S4_QUALITY_CO_Annotation SLSTR_FLAGS_CO_Annotation SLSTR_INDICES_CO_Annotation SLSTR_GEODETIC_CO_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_CO_Annotation SLSTR_GEOMETRY_TO_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S4_RAD_CO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S5_QUALITY_AN_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S5 (A stripe grid, nadir view)">
+               <dataObjectPointer dataObjectID="SLSTR_S5_QUALITY_AN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S5_QUALITY_AO_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S5 (A stripe grid, oblique view)">
+               <dataObjectPointer dataObjectID="SLSTR_S5_QUALITY_AO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S5_QUALITY_BN_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S5 (B stripe grid, nadir view)">
+               <dataObjectPointer dataObjectID="SLSTR_S5_QUALITY_BN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S5_QUALITY_BO_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S5 (B stripe grid, oblique view)">
+               <dataObjectPointer dataObjectID="SLSTR_S5_QUALITY_BO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S5_QUALITY_CN_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S5 (TDI stripe grid, nadir view)">
+               <dataObjectPointer dataObjectID="SLSTR_S5_QUALITY_CN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S5_QUALITY_CO_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S5 (TDI stripe grid, oblique view)">
+               <dataObjectPointer dataObjectID="SLSTR_S5_QUALITY_CO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S5_RAD_AN_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S5 (A stripe grid, nadir view)" dmdID="SLSTR_S5_QUALITY_AN_Annotation SLSTR_FLAGS_AN_Annotation SLSTR_INDICES_AN_Annotation SLSTR_GEODETIC_AN_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_AN_Annotation SLSTR_TIME_A_Annotation SLSTR_GEOMETRY_TN_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S5_RAD_AN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S5_RAD_AO_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S5 (A stripe grid, oblique view)" dmdID="SLSTR_S5_QUALITY_AO_Annotation SLSTR_FLAGS_AN_Annotation SLSTR_INDICES_AO_Annotation SLSTR_GEODETIC_AO_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_AO_Annotation SLSTR_GEOMETRY_TO_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S5_RAD_AO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S5_RAD_BN_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S5 (B stripe grid, nadir view)" dmdID="SLSTR_S5_QUALITY_BN_Annotation SLSTR_FLAGS_BN_Annotation SLSTR_INDICES_BN_Annotation SLSTR_GEODETIC_BN_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_BN_Annotation SLSTR_TIME_B_Annotation SLSTR_GEOMETRY_TN_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S5_RAD_BN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S5_RAD_BO_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S5 (B stripe grid, oblique view)" dmdID="SLSTR_S5_QUALITY_BO_Annotation SLSTR_FLAGS_BO_Annotation SLSTR_INDICES_BO_Annotation SLSTR_GEODETIC_BO_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_BO_Annotation SLSTR_GEOMETRY_TO_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S5_RAD_BO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S5_RAD_CN_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S5 (TDI stripe grid, nadir view)" dmdID="SLSTR_S5_QUALITY_CN_Annotation SLSTR_FLAGS_CN_Annotation SLSTR_INDICES_CN_Annotation SLSTR_GEODETIC_CN_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_CN_Annotation SLSTR_TIME_C_Annotation SLSTR_GEOMETRY_TN_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S5_RAD_CN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S5_RAD_CO_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S5 (TDI stripe grid, oblique view)" dmdID="SLSTR_S5_QUALITY_CO_Annotation SLSTR_FLAGS_CO_Annotation SLSTR_INDICES_CO_Annotation SLSTR_GEODETIC_CO_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_CO_Annotation SLSTR_GEOMETRY_TO_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S5_RAD_CO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S6_QUALITY_AN_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S6 (A stripe grid, nadir view)">
+               <dataObjectPointer dataObjectID="SLSTR_S6_QUALITY_AN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S6_QUALITY_AO_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S6 (A stripe grid, oblique view)">
+               <dataObjectPointer dataObjectID="SLSTR_S6_QUALITY_AO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S6_QUALITY_BN_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S6 (B stripe grid, nadir view)">
+               <dataObjectPointer dataObjectID="SLSTR_S6_QUALITY_BN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S6_QUALITY_BO_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S6 (B stripe grid, oblique view)">
+               <dataObjectPointer dataObjectID="SLSTR_S6_QUALITY_BO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S6_QUALITY_CN_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S6 (TDI stripe grid, nadir view)">
+               <dataObjectPointer dataObjectID="SLSTR_S6_QUALITY_CN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S6_QUALITY_CO_Unit" unitType="Annotation Data Unit" textInfo="Visible and Shortwave IR quality annotations for channel S6 (TDI stripe grid, oblique view)">
+               <dataObjectPointer dataObjectID="SLSTR_S6_QUALITY_CO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S6_RAD_AN_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S6 (A stripe grid, nadir view)" dmdID="SLSTR_S6_QUALITY_AN_Annotation SLSTR_FLAGS_AN_Annotation SLSTR_INDICES_AN_Annotation SLSTR_GEODETIC_AN_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_AN_Annotation SLSTR_TIME_A_Annotation SLSTR_GEOMETRY_TN_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S6_RAD_AN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S6_RAD_AO_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S6 (A stripe grid, oblique view)" dmdID="SLSTR_S6_QUALITY_AO_Annotation SLSTR_FLAGS_AN_Annotation SLSTR_INDICES_AO_Annotation SLSTR_GEODETIC_AO_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_AO_Annotation SLSTR_GEOMETRY_TO_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S6_RAD_AO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S6_RAD_BN_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S6 (B stripe grid, nadir view)" dmdID="SLSTR_S6_QUALITY_BN_Annotation SLSTR_FLAGS_BN_Annotation SLSTR_INDICES_BN_Annotation SLSTR_GEODETIC_BN_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_BN_Annotation SLSTR_TIME_B_Annotation SLSTR_GEOMETRY_TN_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S6_RAD_BN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S6_RAD_BO_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S6 (B stripe grid, oblique view)" dmdID="SLSTR_S6_QUALITY_BO_Annotation SLSTR_FLAGS_BO_Annotation SLSTR_INDICES_BO_Annotation SLSTR_GEODETIC_BO_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_BO_Annotation SLSTR_GEOMETRY_TO_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S6_RAD_BO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S6_RAD_CN_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S6 (TDI stripe grid, nadir view)" dmdID="SLSTR_S6_QUALITY_CN_Annotation SLSTR_FLAGS_CN_Annotation SLSTR_INDICES_CN_Annotation SLSTR_GEODETIC_CN_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_CN_Annotation SLSTR_TIME_C_Annotation SLSTR_GEOMETRY_TN_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S6_RAD_CN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S6_RAD_CO_Unit" unitType="Measurement Data Unit" textInfo="TOA radiance for channel S6 (TDI stripe grid, oblique view)" dmdID="SLSTR_S6_QUALITY_CO_Annotation SLSTR_FLAGS_CO_Annotation SLSTR_INDICES_CO_Annotation SLSTR_GEODETIC_CO_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_CO_Annotation SLSTR_GEOMETRY_TO_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S6_RAD_CO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S7_BT_IN_Unit" unitType="Measurement Data Unit" textInfo="Gridded pixel brightness temperature for channel S7 (1km TIR grid, nadir view)" dmdID="SLSTR_S7_QUALITY_IN_Annotation SLSTR_FLAGS_IN_Annotation SLSTR_INDICES_IN_Annotation SLSTR_GEODETIC_IN_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_IN_Annotation SLSTR_GEOMETRY_TN_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S7_BT_IN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S7_BT_IO_Unit" unitType="Measurement Data Unit" textInfo="Gridded pixel brightness temperature for channel S7 (1km TIR grid, oblique view)" dmdID="SLSTR_S7_QUALITY_IO_Annotation SLSTR_FLAGS_IO_Annotation SLSTR_INDICES_IO_Annotation SLSTR_GEODETIC_IO_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_IO_Annotation SLSTR_GEOMETRY_TO_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S7_BT_IO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S7_QUALITY_IN_Unit" unitType="Annotation Data Unit" textInfo="Thermal Infrared quality annotations for channel S7 (1km TIR grid, nadir view)">
+               <dataObjectPointer dataObjectID="SLSTR_S7_QUALITY_IN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S7_QUALITY_IO_Unit" unitType="Annotation Data Unit" textInfo="Thermal Infrared quality annotations for channel S7 (1km TIR grid, oblique view)">
+               <dataObjectPointer dataObjectID="SLSTR_S7_QUALITY_IO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S8_BT_IN_Unit" unitType="Measurement Data Unit" textInfo="Gridded pixel brightness temperature for channel S8 (1km TIR grid, nadir view)" dmdID="SLSTR_S8_QUALITY_IN_Annotation SLSTR_FLAGS_IN_Annotation SLSTR_INDICES_IN_Annotation SLSTR_GEODETIC_IN_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_IN_Annotation SLSTR_GEOMETRY_TN_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S8_BT_IN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S8_BT_IO_Unit" unitType="Measurement Data Unit" textInfo="Gridded pixel brightness temperature for channel S8 (1km TIR grid, oblique view)" dmdID="SLSTR_S8_QUALITY_IO_Annotation SLSTR_FLAGS_IO_Annotation SLSTR_INDICES_IO_Annotation SLSTR_GEODETIC_IO_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_IO_Annotation SLSTR_GEOMETRY_TO_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S8_BT_IO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S8_QUALITY_IN_Unit" unitType="Annotation Data Unit" textInfo="Thermal Infrared quality annotations for channel S8 (1km TIR grid, nadir view)">
+               <dataObjectPointer dataObjectID="SLSTR_S8_QUALITY_IN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S8_QUALITY_IO_Unit" unitType="Annotation Data Unit" textInfo="Thermal Infrared quality annotations for channel S8 (1km TIR grid, oblique view)">
+               <dataObjectPointer dataObjectID="SLSTR_S8_QUALITY_IO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S9_BT_IN_Unit" unitType="Measurement Data Unit" textInfo="Gridded pixel brightness temperature for channel S9 (1km TIR grid, nadir view)" dmdID="SLSTR_S9_QUALITY_IN_Annotation SLSTR_FLAGS_IN_Annotation SLSTR_INDICES_IN_Annotation SLSTR_GEODETIC_IN_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_IN_Annotation SLSTR_GEOMETRY_TN_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S9_BT_IN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S9_BT_IO_Unit" unitType="Measurement Data Unit" textInfo="Gridded pixel brightness temperature for channel S9 (1km TIR grid, oblique view)" dmdID="SLSTR_S9_QUALITY_IO_Annotation SLSTR_FLAGS_IO_Annotation SLSTR_INDICES_IO_Annotation SLSTR_GEODETIC_IO_Annotation SLSTR_GEODETIC_TX_Annotation SLSTR_CARTESIAN_IO_Annotation SLSTR_GEOMETRY_TO_Annotation SLSTR_MET_TX_Annotation">
+               <dataObjectPointer dataObjectID="SLSTR_S9_BT_IO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S9_QUALITY_IN_Unit" unitType="Annotation Data Unit" textInfo="Thermal Infrared quality annotations for channel S9 (1km TIR grid, nadir view)">
+               <dataObjectPointer dataObjectID="SLSTR_S9_QUALITY_IN_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_S9_QUALITY_IO_Unit" unitType="Annotation Data Unit" textInfo="Thermal Infrared quality annotations for channel S9 (1km TIR grid, oblique view)">
+               <dataObjectPointer dataObjectID="SLSTR_S9_QUALITY_IO_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_TIME_A_Unit" unitType="Annotation Data Unit" textInfo="Time annotations for the A, B or TDI stripe grid, nadir and oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_TIME_A_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_TIME_B_Unit" unitType="Annotation Data Unit" textInfo="Time annotations for the A, B or TDI stripe grid, nadir and oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_TIME_B_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_TIME_C_Unit" unitType="Annotation Data Unit" textInfo="Time annotations for the A, B or TDI stripe grid, nadir and oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_TIME_C_Data"/>
+            </xfdu:contentUnit>
+            <xfdu:contentUnit  ID="SLSTR_TIME_I_Unit" unitType="Annotation Data Unit" textInfo="Time annotations for the A, B or TDI stripe grid, nadir and oblique view">
+               <dataObjectPointer dataObjectID="SLSTR_TIME_I_Data"/>
+            </xfdu:contentUnit>
+         </xfdu:contentUnit>
+      </informationPackageMap>
+      <metadataSection>
+         <metadataObject ID="acquisitionPeriod" classification="DESCRIPTION" category="DMD">
+            <metadataWrap mimeType="text/xml" vocabularyName="Sentinel-SAFE" textInfo="Acquisition Period">
+               <xmlData>
+                  <sentinel-safe:acquisitionPeriod>
+                     <sentinel-safe:startTime>2018-08-19T19:46:43.211970Z</sentinel-safe:startTime>
+                     <sentinel-safe:stopTime>2018-08-19T19:49:43.211970Z</sentinel-safe:stopTime>
+                  </sentinel-safe:acquisitionPeriod>
+               </xmlData>
+            </metadataWrap>
+         </metadataObject>
+         <metadataObject ID="platform" classification="DESCRIPTION" category="DMD">
+            <metadataWrap mimeType="text/xml" vocabularyName="Sentinel-SAFE" textInfo="Platform Description">
+               <xmlData>
+                  <sentinel-safe:platform>
+                     <sentinel-safe:nssdcIdentifier>2016-011A</sentinel-safe:nssdcIdentifier>
+                     <sentinel-safe:familyName>Sentinel-3</sentinel-safe:familyName>
+                     <sentinel-safe:number>A</sentinel-safe:number>
+                     <sentinel-safe:instrument>
+                        <sentinel-safe:familyName abbreviation="SLSTR">Sea and Land Surface Temperature Radiometer</sentinel-safe:familyName>
+                        <sentinel-safe:mode identifier="EO">Earth Observation</sentinel-safe:mode>
+                     </sentinel-safe:instrument>
+                  </sentinel-safe:platform>
+               </xmlData>
+            </metadataWrap>
+         </metadataObject>
+         <metadataObject ID="measurementFrameSet" classification="DESCRIPTION" category="DMD">
+            <metadataWrap mimeType="text/xml" vocabularyName="Sentinel-SAFE" textInfo="Frame Set">
+               <xmlData>
+                  <sentinel-safe:frameSet>
+                     <sentinel-safe:footPrint srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                        <gml:posList>10.4436 -155.018 10.3466 -154.559 10.2643 -154.105 10.1737 -153.648 10.0779 -153.184 9.99059 -152.736 9.8981 -152.281 9.7993 -151.824 9.71127 -151.37 9.61016 -150.916 9.51591 -150.453 9.41593 -150 9.32642 -149.552 9.22641 -149.092 9.13125 -148.644 9.02951 -148.187 8.93801 -147.732 8.83817 -147.284 8.73672 -146.834 8.63351 -146.378 8.53841 -145.922 8.43619 -145.475 8.33214 -145.026 8.22657 -144.573 8.13019 -144.117 8.02299 -143.667 7.92348 -143.22 7.81383 -142.765 7.70949 -142.321 7.61324 -141.869 7.5719 -141.693 10.1845 -141.069 12.8394 -140.418 15.492 -139.746 18.1418 -139.051 18.1864 -139.234 18.2912 -139.695 18.4024 -140.163 18.5216 -140.639 18.624 -141.102 18.7354 -141.574 18.8372 -142.047 18.9457 -142.521 19.0528 -142.99 19.1582 -143.456 19.254 -143.934 19.3592 -144.411 19.4609 -144.883 19.5589 -145.351 19.6511 -145.831 19.7489 -146.308 19.8414 -146.779 19.9351 -147.256 20.028 -147.737 20.1241 -148.214 20.2162 -148.697 20.3027 -149.169 20.3916 -149.656 20.4772 -150.136 20.5572 -150.612 20.6354 -151.096 20.7263 -151.58 20.7995 -152.057 20.8789 -152.54 20.9632 -153.028 18.3225 -153.51 15.6815 -154.003 13.0405 -154.509 10.4436 -155.018</gml:posList>
+                     </sentinel-safe:footPrint>
+                  </sentinel-safe:frameSet>
+               </xmlData>
+            </metadataWrap>
+         </metadataObject>
+         <metadataObject ID="generalProductInformation" classification="DESCRIPTION" category="DMD">
+            <metadataWrap mimeType="text/xml" vocabularyName="Sentinel-SAFE" textInfo="General Product Information">
+               <xmlData>
+                  <sentinel3:generalProductInformation>
+                     <sentinel3:productName>S3A_SL_1_RBT____20180819T194643_20180819T194943_20180819T214913_0179_034_370_2700_MAR_O_NR_002.SEN3</sentinel3:productName>
+                     <sentinel3:productType>SL_1_RBT___</sentinel3:productType>
+                     <sentinel3:timeliness>NR</sentinel3:timeliness>
+                     <sentinel3:baselineCollection>002</sentinel3:baselineCollection>
+                     <sentinel3:creationTime>20180819T214913</sentinel3:creationTime>
+                     <sentinel3:productSize>546184287</sentinel3:productSize>
+                     <sentinel3:dumpInformation>
+                        <sentinel3:granuleNumber>6</sentinel3:granuleNumber>
+                        <sentinel3:granulePosition>NONE</sentinel3:granulePosition>
+                        <sentinel3:dumpStart>2018-08-19T19:20:39.823920Z</sentinel3:dumpStart>
+                        <sentinel3:receivingGroundStation>CGS</sentinel3:receivingGroundStation>
+                        <sentinel3:receivingStartTime>2018-08-19T21:02:15.609604Z</sentinel3:receivingStartTime>
+                        <sentinel3:receivingStopTime>2018-08-19T21:02:29.826900Z</sentinel3:receivingStopTime>
+                     </sentinel3:dumpInformation>
+                     <sentinel3:dispositionMode>Operational</sentinel3:dispositionMode>
+                     <sentinel3:productUnit>
+                        <sentinel3:type>FRAME</sentinel3:type>
+                        <sentinel3:duration>179</sentinel3:duration>
+                        <sentinel3:alongtrackCoordinate>2700</sentinel3:alongtrackCoordinate>
+                     </sentinel3:productUnit>
+                  </sentinel3:generalProductInformation>
+               </xmlData>
+            </metadataWrap>
+         </metadataObject>
+         <metadataObject ID="slstrProductInformation" classification="DESCRIPTION" category="DMD">
+            <metadataWrap mimeType="text/xml" vocabularyName="Sentinel-SAFE" textInfo="Slstr Product Information">
+               <xmlData>
+                  <slstr:slstrProductInformation>
+                     <slstr:classificationSummary grid="1 km">
+                        <sentinel3:salineWaterPixels percentage="100.000000"/>
+                        <sentinel3:landPixels percentage="0.000000"/>
+                        <sentinel3:coastalPixels percentage="0.000000"/>
+                        <sentinel3:freshInlandWaterPixels percentage="0.000000"/>
+                        <sentinel3:tidalRegionPixels percentage="0.000000"/>
+                        <sentinel3:cloudyPixels percentage="87.484896"/>
+                     </slstr:classificationSummary>
+                     <slstr:classificationSummary grid="0.5 km stripe A">
+                        <sentinel3:salineWaterPixels percentage="100.000000"/>
+                        <sentinel3:landPixels percentage="0.000000"/>
+                        <sentinel3:coastalPixels percentage="0.000000"/>
+                        <sentinel3:freshInlandWaterPixels percentage="0.000000"/>
+                        <sentinel3:tidalRegionPixels percentage="0.000000"/>
+                        <sentinel3:cloudyPixels percentage="86.372622"/>
+                     </slstr:classificationSummary>
+                     <slstr:classificationSummary grid="0.5 km stripe B">
+                        <sentinel3:salineWaterPixels percentage="100.000000"/>
+                        <sentinel3:landPixels percentage="0.000000"/>
+                        <sentinel3:coastalPixels percentage="0.000000"/>
+                        <sentinel3:freshInlandWaterPixels percentage="0.000000"/>
+                        <sentinel3:tidalRegionPixels percentage="0.000000"/>
+                        <sentinel3:cloudyPixels percentage="86.372622"/>
+                     </slstr:classificationSummary>
+                     <slstr:classificationSummary grid="0.5 km TDI">
+                        <sentinel3:salineWaterPixels percentage="100.000000"/>
+                        <sentinel3:landPixels percentage="0.000000"/>
+                        <sentinel3:coastalPixels percentage="0.000000"/>
+                        <sentinel3:freshInlandWaterPixels percentage="0.000000"/>
+                        <sentinel3:tidalRegionPixels percentage="0.000000"/>
+                        <sentinel3:cloudyPixels percentage="86.372622"/>
+                     </slstr:classificationSummary>
+                     <slstr:resolution grid="1 km">
+                        <slstr:spatialResolution>1000</slstr:spatialResolution>
+                     </slstr:resolution>
+                     <slstr:resolution grid="0.5 km stripe A">
+                        <slstr:spatialResolution>500</slstr:spatialResolution>
+                     </slstr:resolution>
+                     <slstr:resolution grid="0.5 km stripe B">
+                        <slstr:spatialResolution>500</slstr:spatialResolution>
+                     </slstr:resolution>
+                     <slstr:resolution grid="0.5 km TDI">
+                        <slstr:spatialResolution>500</slstr:spatialResolution>
+                     </slstr:resolution>
+                     <slstr:resolution grid="Tie Points">
+                        <slstr:spatialResolution>16000</slstr:spatialResolution>
+                     </slstr:resolution>
+                     <slstr:nadirImageSize grid="1 km">
+                        <sentinel3:startOffset>18025</sentinel3:startOffset>
+                        <sentinel3:trackOffset>998</sentinel3:trackOffset>
+                        <sentinel3:rows>1200</sentinel3:rows>
+                        <sentinel3:columns>1500</sentinel3:columns>
+                     </slstr:nadirImageSize>
+                     <slstr:nadirImageSize grid="0.5 km stripe A">
+                        <sentinel3:startOffset>36049</sentinel3:startOffset>
+                        <sentinel3:trackOffset>1996</sentinel3:trackOffset>
+                        <sentinel3:rows>2400</sentinel3:rows>
+                        <sentinel3:columns>3000</sentinel3:columns>
+                     </slstr:nadirImageSize>
+                     <slstr:nadirImageSize grid="0.5 km stripe B">
+                        <sentinel3:startOffset>36049</sentinel3:startOffset>
+                        <sentinel3:trackOffset>1996</sentinel3:trackOffset>
+                        <sentinel3:rows>2400</sentinel3:rows>
+                        <sentinel3:columns>3000</sentinel3:columns>
+                     </slstr:nadirImageSize>
+                     <slstr:nadirImageSize grid="0.5 km TDI">
+                        <sentinel3:startOffset>36049</sentinel3:startOffset>
+                        <sentinel3:trackOffset>1996</sentinel3:trackOffset>
+                        <sentinel3:rows>2400</sentinel3:rows>
+                        <sentinel3:columns>3000</sentinel3:columns>
+                     </slstr:nadirImageSize>
+                     <slstr:nadirImageSize grid="Tie Points">
+                        <sentinel3:startOffset>18025</sentinel3:startOffset>
+                        <sentinel3:trackOffset>64</sentinel3:trackOffset>
+                        <sentinel3:rows>1200</sentinel3:rows>
+                        <sentinel3:columns>130</sentinel3:columns>
+                     </slstr:nadirImageSize>
+                     <slstr:obliqueImageSize grid="1 km">
+                        <sentinel3:startOffset>18025</sentinel3:startOffset>
+                        <sentinel3:trackOffset>450</sentinel3:trackOffset>
+                        <sentinel3:rows>1200</sentinel3:rows>
+                        <sentinel3:columns>900</sentinel3:columns>
+                     </slstr:obliqueImageSize>
+                     <slstr:obliqueImageSize grid="0.5 km stripe A">
+                        <sentinel3:startOffset>36049</sentinel3:startOffset>
+                        <sentinel3:trackOffset>900</sentinel3:trackOffset>
+                        <sentinel3:rows>2400</sentinel3:rows>
+                        <sentinel3:columns>1800</sentinel3:columns>
+                     </slstr:obliqueImageSize>
+                     <slstr:obliqueImageSize grid="0.5 km stripe B">
+                        <sentinel3:startOffset>36049</sentinel3:startOffset>
+                        <sentinel3:trackOffset>900</sentinel3:trackOffset>
+                        <sentinel3:rows>2400</sentinel3:rows>
+                        <sentinel3:columns>1800</sentinel3:columns>
+                     </slstr:obliqueImageSize>
+                     <slstr:obliqueImageSize grid="0.5 km TDI">
+                        <sentinel3:startOffset>36049</sentinel3:startOffset>
+                        <sentinel3:trackOffset>900</sentinel3:trackOffset>
+                        <sentinel3:rows>2400</sentinel3:rows>
+                        <sentinel3:columns>1800</sentinel3:columns>
+                     </slstr:obliqueImageSize>
+                     <slstr:obliqueImageSize grid="Tie Points">
+                        <sentinel3:startOffset>18025</sentinel3:startOffset>
+                        <sentinel3:trackOffset>64</sentinel3:trackOffset>
+                        <sentinel3:rows>1200</sentinel3:rows>
+                        <sentinel3:columns>130</sentinel3:columns>
+                     </slstr:obliqueImageSize>
+                     <slstr:measurementAccuracy>~2% S1-S6, ~0.1K S7-S9, ~1K F1-F2</slstr:measurementAccuracy>
+                     <slstr:accuracyReference>[PDS-SL]</slstr:accuracyReference>
+                     <slstr:pixelQualitySummary grid="1 km">
+                        <slstr:cosmeticPixels value="767867" percentage="26.662049"/>
+                        <slstr:duplicatedPixels value="139624" percentage="4.848056"/>
+                        <slstr:saturatedPixels value="0" percentage="0.000000"/>
+                        <slstr:outOfRangePixels value="262046" percentage="1.819764"/>
+                     </slstr:pixelQualitySummary>
+                     <slstr:pixelQualitySummary grid="0.5 km stripe A">
+                        <slstr:cosmeticPixels value="3037645" percentage="26.368446"/>
+                        <slstr:duplicatedPixels value="534328" percentage="4.638264"/>
+                        <slstr:saturatedPixels value="5853" percentage="0.008468"/>
+                        <slstr:outOfRangePixels value="206505" percentage="0.298763"/>
+                     </slstr:pixelQualitySummary>
+                     <slstr:pixelQualitySummary grid="0.5 km stripe B">
+                        <slstr:cosmeticPixels value="3043114" percentage="26.415920"/>
+                        <slstr:duplicatedPixels value="545236" percentage="4.732951"/>
+                        <slstr:saturatedPixels value="0" percentage="0.000000"/>
+                        <slstr:outOfRangePixels value="105769" percentage="0.306045"/>
+                     </slstr:pixelQualitySummary>
+                     <slstr:pixelQualitySummary grid="0.5 km TDI">
+                        <slstr:cosmeticPixels value="3041436" percentage="26.401354"/>
+                        <slstr:duplicatedPixels value="537328" percentage="4.664306"/>
+                        <slstr:saturatedPixels value="0" percentage="0.000000"/>
+                        <slstr:outOfRangePixels value="186" percentage="0.000538"/>
+                     </slstr:pixelQualitySummary>
+                     <slstr:ecmwfType timeRelevance="0">FORECAST</slstr:ecmwfType>
+                     <slstr:temperatureSummary>
+                        <slstr:temperature element="S1_Detector">
+                           <slstr:min>266.445</slstr:min>
+                           <slstr:max>266.529</slstr:max>
+                        </slstr:temperature>
+                        <slstr:temperature element="S2_Detector">
+                           <slstr:min>266.328</slstr:min>
+                           <slstr:max>266.395</slstr:max>
+                        </slstr:temperature>
+                        <slstr:temperature element="S3_Detector">
+                           <slstr:min>265.797</slstr:min>
+                           <slstr:max>265.861</slstr:max>
+                        </slstr:temperature>
+                        <slstr:temperature element="S4_Detector">
+                           <slstr:min>85.0273</slstr:min>
+                           <slstr:max>85.0729</slstr:max>
+                        </slstr:temperature>
+                        <slstr:temperature element="S5_Detector">
+                           <slstr:min>85.3612</slstr:min>
+                           <slstr:max>85.4003</slstr:max>
+                        </slstr:temperature>
+                        <slstr:temperature element="S6_Detector">
+                           <slstr:min>86.2333</slstr:min>
+                           <slstr:max>86.2755</slstr:max>
+                        </slstr:temperature>
+                        <slstr:temperature element="S7_Detector">
+                           <slstr:min>84.7706</slstr:min>
+                           <slstr:max>84.8193</slstr:max>
+                        </slstr:temperature>
+                        <slstr:temperature element="S8_Detector">
+                           <slstr:min>86.0886</slstr:min>
+                           <slstr:max>86.1276</slstr:max>
+                        </slstr:temperature>
+                        <slstr:temperature element="S9_Detector">
+                           <slstr:min>86.6795</slstr:min>
+                           <slstr:max>86.7153</slstr:max>
+                        </slstr:temperature>
+                     </slstr:temperatureSummary>
+                     <slstr:bandDescriptions bands="11">
+                        <sentinel3:band name="S1">
+                           <sentinel3:centralWavelength>554.27</sentinel3:centralWavelength>
+                           <sentinel3:bandwidth>19.26</sentinel3:bandwidth>
+                        </sentinel3:band>
+                        <sentinel3:band name="S2">
+                           <sentinel3:centralWavelength>659.47</sentinel3:centralWavelength>
+                           <sentinel3:bandwidth>19.25</sentinel3:bandwidth>
+                        </sentinel3:band>
+                        <sentinel3:band name="S3">
+                           <sentinel3:centralWavelength>868</sentinel3:centralWavelength>
+                           <sentinel3:bandwidth>20.6</sentinel3:bandwidth>
+                        </sentinel3:band>
+                        <sentinel3:band name="S4">
+                           <sentinel3:centralWavelength>1374.8</sentinel3:centralWavelength>
+                           <sentinel3:bandwidth>20.8</sentinel3:bandwidth>
+                        </sentinel3:band>
+                        <sentinel3:band name="S5">
+                           <sentinel3:centralWavelength>1613.4</sentinel3:centralWavelength>
+                           <sentinel3:bandwidth>60.68</sentinel3:bandwidth>
+                        </sentinel3:band>
+                        <sentinel3:band name="S6">
+                           <sentinel3:centralWavelength>2255.7</sentinel3:centralWavelength>
+                           <sentinel3:bandwidth>50.15</sentinel3:bandwidth>
+                        </sentinel3:band>
+                        <sentinel3:band name="S7">
+                           <sentinel3:centralWavelength>3742</sentinel3:centralWavelength>
+                           <sentinel3:bandwidth>398</sentinel3:bandwidth>
+                        </sentinel3:band>
+                        <sentinel3:band name="S8">
+                           <sentinel3:centralWavelength>10854</sentinel3:centralWavelength>
+                           <sentinel3:bandwidth>776</sentinel3:bandwidth>
+                        </sentinel3:band>
+                        <sentinel3:band name="S9">
+                           <sentinel3:centralWavelength>12022.5</sentinel3:centralWavelength>
+                           <sentinel3:bandwidth>905</sentinel3:bandwidth>
+                        </sentinel3:band>
+                        <sentinel3:band name="F1">
+                           <sentinel3:centralWavelength>3742</sentinel3:centralWavelength>
+                           <sentinel3:bandwidth>398</sentinel3:bandwidth>
+                        </sentinel3:band>
+                        <sentinel3:band name="F2">
+                           <sentinel3:centralWavelength>10854</sentinel3:centralWavelength>
+                           <sentinel3:bandwidth>776</sentinel3:bandwidth>
+                        </sentinel3:band>
+                     </slstr:bandDescriptions>
+                  </slstr:slstrProductInformation>
+               </xmlData>
+            </metadataWrap>
+         </metadataObject>
+         <metadataObject ID="measurementOrbitReference" classification="DESCRIPTION" category="DMD">
+            <metadataWrap mimeType="text/xml" vocabularyName="Sentinel-SAFE" textInfo="Orbit Reference">
+               <xmlData>
+                  <sentinel-safe:orbitReference>
+                     <sentinel-safe:orbitNumber type="start" groundTrackDirection="descending">13048</sentinel-safe:orbitNumber>
+                     <sentinel-safe:relativeOrbitNumber type="start" groundTrackDirection="descending">370</sentinel-safe:relativeOrbitNumber>
+                     <sentinel-safe:passNumber type="start" groundTrackDirection="descending">26096</sentinel-safe:passNumber>
+                     <sentinel-safe:relativePassNumber type="start" groundTrackDirection="descending">740</sentinel-safe:relativePassNumber>
+                     <sentinel-safe:cycleNumber>34</sentinel-safe:cycleNumber>
+                     <sentinel-safe:phaseIdentifier>1</sentinel-safe:phaseIdentifier>
+                     <sentinel-safe:elementSet>
+                        <sentinel-safe:ephemeris>
+                           <sentinel-safe:epoch type="TAI">2018-08-19T19:02:20.211970</sentinel-safe:epoch>
+                           <sentinel-safe:epoch type="UTC">2018-08-19T19:01:43.211970Z</sentinel-safe:epoch>
+                           <sentinel-safe:epoch type="UT1">2018-08-19T19:01:43.276067</sentinel-safe:epoch>
+                           <sentinel-safe:position>
+                              <sentinel-safe:x>5117457.0070000002</sentinel-safe:x>
+                              <sentinel-safe:y>5041598.5389999999</sentinel-safe:y>
+                              <sentinel-safe:z>0.002</sentinel-safe:z>
+                           </sentinel-safe:position>
+                           <sentinel-safe:velocity>
+                              <sentinel-safe:x>1144.680546</sentinel-safe:x>
+                              <sentinel-safe:y>-1173.9374</sentinel-safe:y>
+                              <sentinel-safe:z>7366.5298160000002</sentinel-safe:z>
+                           </sentinel-safe:velocity>
+                        </sentinel-safe:ephemeris>
+                        <sentinel-safe:ephemeris>
+                           <sentinel-safe:epoch type="TAI">2018-08-19T20:43:19.425871</sentinel-safe:epoch>
+                           <sentinel-safe:epoch type="UTC">2018-08-19T20:42:42.425871Z</sentinel-safe:epoch>
+                           <sentinel-safe:epoch type="UT1">2018-08-19T20:42:42.489956</sentinel-safe:epoch>
+                           <sentinel-safe:position>
+                              <sentinel-safe:x>6778942.3820000002</sentinel-safe:x>
+                              <sentinel-safe:y>2377378.8110000002</sentinel-safe:y>
+                              <sentinel-safe:z>-0.002</sentinel-safe:z>
+                           </sentinel-safe:position>
+                           <sentinel-safe:velocity>
+                              <sentinel-safe:x>534.64378799999997</sentinel-safe:x>
+                              <sentinel-safe:y>-1550.2597679999999</sentinel-safe:y>
+                              <sentinel-safe:z>7366.517355</sentinel-safe:z>
+                           </sentinel-safe:velocity>
+                        </sentinel-safe:ephemeris>
+                     </sentinel-safe:elementSet>
+                  </sentinel-safe:orbitReference>
+               </xmlData>
+            </metadataWrap>
+         </metadataObject>
+         <metadataObject ID="measurementQualityInformation" classification="DESCRIPTION" category="DMD">
+            <metadataWrap mimeType="text/xml" vocabularyName="Sentinel-SAFE" textInfo="Quality Information">
+               <xmlData>
+                  <sentinel-safe:qualityInformation>
+                     <sentinel-safe:extension>
+                        <sentinel3:productQuality>
+                           <sentinel3:onlineQualityCheck>PASSED</sentinel3:onlineQualityCheck>
+                        </sentinel3:productQuality>
+                     </sentinel-safe:extension>
+                  </sentinel-safe:qualityInformation>
+               </xmlData>
+            </metadataWrap>
+         </metadataObject>
+         <metadataObject ID="processing" classification="PROVENANCE" category="PDI">
+            <metadataWrap mimeType="text/xml" vocabularyName="Sentinel-SAFE" textInfo="Processing">
+               <xmlData>
+                  <sentinel-safe:processing name="DataProcessing" outputLevel="1" start="2018-08-19T21:50:18.000000" stop="2018-08-19T21:50:20.625400">
+                     <sentinel-safe:facility name="Marine Processing and Archiving Centre [MAR]" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                        <sentinel-safe:hardware name="OPE"/>
+                        <sentinel-safe:software name="PUG" version="03.35"/>
+                     </sentinel-safe:facility>
+                     <sentinel-safe:resource name="Product Data Format Specification - SLSTR Level 1 and Level 2 Instrument Products S3IPF.PDS.005" role="Applicable Document" version="2.5"/>
+                     <sentinel-safe:resource name="Metadata Specification, Excel document S3IPF.PDS.008" role="Applicable Document" version="3.3"/>
+                     <sentinel-safe:resource name="S3A_SL_1_RBT____20180819T194540_20180819T195040_20180819T212002_0299_034_370______MAR_O_NR_003.SEN3" role="L1 Product">
+                        <sentinel-safe:processing name="DataProcessing" outputLevel="1" start="2018-08-19T21:19:19.141692" stop="2018-08-19T21:40:33.222291">
+                           <sentinel-safe:facility name="Marine Processing and Archiving Centre [MAR]" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                              <sentinel-safe:hardware name="OPE"/>
+                              <sentinel-safe:software name="IPF-SL-1" version="06.16"/>
+                           </sentinel-safe:facility>
+                           <sentinel-safe:resource name="S3__AX___CLM_AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="Coastline Mask file">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3__AX___DEM_AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="Digital Elevation Model GETASSE30V2">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="Time Correlation File">
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="FOS Orbit File (Restituted)">
+                              <sentinel-safe:processing name="ADC_AUX_REFORMATTER">
+                                 <sentinel-safe:facility name="MAR" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="2.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3__AX___LWM_AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="Land/Water Mask file">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3__AX___MF1_AX_20180818T180000_20180819T060000_20180818T175204___________________ECW_O_NR_001.SEN3" role="ECMWF Meteorological Data (Forecast ) FC SFC and FC PL">
+                              <sentinel-safe:processing name="ADC_AUX_REFORMATTER">
+                                 <sentinel-safe:facility name="MAR" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="2.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3__AX___MF1_AX_20180819T000000_20180819T120000_20180818T180255___________________ECW_O_NR_001.SEN3" role="ECMWF Meteorological Data (Forecast ) FC SFC and FC PL">
+                              <sentinel-safe:processing name="ADC_AUX_REFORMATTER">
+                                 <sentinel-safe:facility name="MAR" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="2.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3__AX___MF1_AX_20180819T060000_20180819T180000_20180819T063458___________________ECW_O_NR_001.SEN3" role="ECMWF Meteorological Data (Forecast ) FC SFC and FC PL">
+                              <sentinel-safe:processing name="ADC_AUX_REFORMATTER">
+                                 <sentinel-safe:facility name="MAR" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="2.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3__AX___MF1_AX_20180819T120000_20180820T000000_20180819T063456___________________ECW_O_NR_001.SEN3" role="ECMWF Meteorological Data (Forecast ) FC SFC and FC PL">
+                              <sentinel-safe:processing name="ADC_AUX_REFORMATTER">
+                                 <sentinel-safe:facility name="MAR" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="2.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3__AX___MF1_AX_20180819T180000_20180820T060000_20180819T175547___________________ECW_O_NR_001.SEN3" role="ECMWF Meteorological Data (Forecast ) FC SFC and FC PL">
+                              <sentinel-safe:processing name="ADC_AUX_REFORMATTER">
+                                 <sentinel-safe:facility name="MAR" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="2.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3__AX___MF1_AX_20180820T000000_20180820T120000_20180819T175605___________________ECW_O_NR_001.SEN3" role="ECMWF Meteorological Data (Forecast ) FC SFC and FC PL">
+                              <sentinel-safe:processing name="ADC_AUX_REFORMATTER">
+                                 <sentinel-safe:facility name="MAR" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="2.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3__AX___OOM_AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="Open Ocean Mask file">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_AX___OSF_AX_20160216T192404_99991231T235959_20170322T163046___________________EUM_O_AL_001.SEN3" role="Reference Orbit Scenario File">
+                              <sentinel-safe:processing name="ADC_AUX_REFORMATTER">
+                                 <sentinel-safe:facility name="MAR" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="2.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3__AX___TRM_AX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="Tidal Regions Mask file">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_0_SLT____20180819T194040_20180819T194540_20180819T211728_0299_034_370______MAR_O_NR_002.SEN3" role="L0 Product">
+                              <sentinel-safe:processing name="DataProcessing" outputLevel="0" start="2018-08-19T21:17:25.895097" stop="2018-08-19T21:17:40.109522">
+                                 <sentinel-safe:facility name="Marine Processing and Archiving Centre [MAR]" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="IPF-0" version="06.12"/>
+                                 </sentinel-safe:facility>
+                                 <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="Time Correlation File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="FOS Orbit File (Restituted)">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_AX___OSF_AX_20160216T192404_99991231T235959_20170322T163046___________________EUM_O_AL_001.SEN3" role="Reference Orbit Scenario File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_SL_0_SLT__G_20180819T194058_20180819T194558_20180819T210230_0300______________SVL_O_NR_OPE.ISIP" role="L0PP Granule">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_TM_0_NAT____20180819T192041_20180819T210107_20180819T211301_6026_034_370______MAR_O_AL_002.SEN3" role="Orbit File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_TM_0_NAT____20180819T192041_20180819T210107_20180819T211301_6026_034_370______MAR_O_AL_002.SEN3" role="L0 Product">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_TM_0_NAT____20180819T192041_20180819T210107_20180819T211301_6026_034_370______MAR_O_AL_002.SEN3" role="Orbit File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_TM_0_NAT____20180819T192041_20180819T210107_20180819T211301_6026_034_370______MAR_O_AL_002.SEN3" role="L0 Product">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3IPF PDS 001 - i1r8 - Product Data Format Specification - Level 0" role="Product Data Format Specification - Level 0">
+                                 </sentinel-safe:resource>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_0_SLT____20180819T194540_20180819T195040_20180819T211754_0299_034_370______MAR_O_NR_002.SEN3" role="L0 Product">
+                              <sentinel-safe:processing name="DataProcessing" outputLevel="0" start="2018-08-19T21:17:51.269902" stop="2018-08-19T21:18:07.062458">
+                                 <sentinel-safe:facility name="Marine Processing and Archiving Centre [MAR]" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="IPF-0" version="06.12"/>
+                                 </sentinel-safe:facility>
+                                 <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="Time Correlation File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="FOS Orbit File (Restituted)">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_AX___OSF_AX_20160216T192404_99991231T235959_20170322T163046___________________EUM_O_AL_001.SEN3" role="Reference Orbit Scenario File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_SL_0_SLT__G_20180819T194558_20180819T195058_20180819T210236_0300______________SVL_O_NR_OPE.ISIP" role="L0PP Granule">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_TM_0_NAT____20180819T192041_20180819T210107_20180819T211301_6026_034_370______MAR_O_AL_002.SEN3" role="Orbit File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_TM_0_NAT____20180819T192041_20180819T210107_20180819T211301_6026_034_370______MAR_O_AL_002.SEN3" role="L0 Product">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_TM_0_NAT____20180819T192041_20180819T210107_20180819T211301_6026_034_370______MAR_O_AL_002.SEN3" role="Orbit File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_TM_0_NAT____20180819T192041_20180819T210107_20180819T211301_6026_034_370______MAR_O_AL_002.SEN3" role="L0 Product">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3IPF PDS 001 - i1r8 - Product Data Format Specification - Level 0" role="Product Data Format Specification - Level 0">
+                                 </sentinel-safe:resource>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_0_SLT____20180819T195040_20180819T195540_20180819T211826_0299_034_370______MAR_O_NR_002.SEN3" role="L0 Product">
+                              <sentinel-safe:processing name="DataProcessing" outputLevel="0" start="2018-08-19T21:18:23.789763" stop="2018-08-19T21:18:40.678477">
+                                 <sentinel-safe:facility name="Marine Processing and Archiving Centre [MAR]" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="IPF-0" version="06.12"/>
+                                 </sentinel-safe:facility>
+                                 <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="Time Correlation File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="FOS Orbit File (Restituted)">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_AX___OSF_AX_20160216T192404_99991231T235959_20170322T163046___________________EUM_O_AL_001.SEN3" role="Reference Orbit Scenario File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_SL_0_SLT__G_20180819T195058_20180819T195558_20180819T210246_0300______________SVL_O_NR_OPE.ISIP" role="L0PP Granule">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_TM_0_NAT____20180819T192041_20180819T210107_20180819T211301_6026_034_370______MAR_O_AL_002.SEN3" role="Orbit File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_TM_0_NAT____20180819T192041_20180819T210107_20180819T211301_6026_034_370______MAR_O_AL_002.SEN3" role="L0 Product">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_TM_0_NAT____20180819T192041_20180819T210107_20180819T211301_6026_034_370______MAR_O_AL_002.SEN3" role="Orbit File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_TM_0_NAT____20180819T192041_20180819T210107_20180819T211301_6026_034_370______MAR_O_AL_002.SEN3" role="L0 Product">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3IPF PDS 001 - i1r8 - Product Data Format Specification - Level 0" role="Product Data Format Specification - Level 0">
+                                 </sentinel-safe:resource>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_ADJ_AX_20160216T000000_20991231T235959_20180202T120000___________________MPC_O_AL_001.SEN3" role="SLSTR AVHRR/SLSTR Adjustement Parameters Data File">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_ANC_AX_20160216T000000_20991231T235959_20170324T120000___________________MPC_O_AL_009.SEN3" role="SLSTR Ancillary data file">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_CDP_AX_20160216T000000_20991231T235959_20180202T120000___________________MPC_O_AL_001.SEN3" role="SLSTR Conditional Probability LUT - Cloudy Conditions Data File">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_CLO_AX_20160216T000000_20991231T235959_20180202T120000___________________MPC_O_AL_006.SEN3" role="SLSTR Cloud LUT Data File">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_CLP_AX_20160216T000000_20991231T235959_20180202T120000___________________MPC_O_AL_001.SEN3" role="SLSTR Conditional Probability LUT - Clear Conditions Data File">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_ESSTAX_20160216T000000_20991231T235959_20180202T120000___________________MPC_O_AL_001.SEN3" role="SLSTR Map of SST Uncertainties Data File">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_GEC_AX_20160216T000000_20991231T235959_20180202T120000___________________MPC_O_AL_007.SEN3" role="SLSTR Geometric Calibration Data File">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_GEO_AX_20160216T000000_20991231T235959_20180202T120000___________________MPC_O_AL_007.SEN3" role="SLSTR Geometry Data file">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_IRE_AX_20160216T000000_20991231T235959_20180202T120000___________________MPC_O_AL_001.SEN3" role="SLSTR Input Land Surface IR Emissivity Data File">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_LCC_AX_20160216T000000_20991231T235959_20180202T120000___________________MPC_O_AL_001.SEN3" role="SLSTR Input Land Cloud Coefficient Data File">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_NAS4AX_20160216T000000_20991231T235959_20180202T120000___________________MPC_O_AL_010.SEN3" role="SLSTR Visible and shortwave infrared (Visible-SWIR) characterisation data file S4 NADIR Stripe A">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_NAS5AX_20160216T000000_20991231T235959_20180202T120000___________________MPC_O_AL_010.SEN3" role="SLSTR Visible and shortwave infrared (Visible-SWIR) characterisation data file S5 NADIR Stripe A">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_NAS6AX_20160216T000000_20991231T235959_20180202T120000___________________MPC_O_AL_010.SEN3" role="SLSTR Visible and shortwave infrared (Visible-SWIR) characterisation data file S6 NADIR Stripe A">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_NBS4AX_20160216T000000_20991231T235959_20180202T120000___________________MPC_O_AL_010.SEN3" role="SLSTR Visible and shortwave infrared (Visible-SWIR) characterisation data file S4 NADIR Stripe B">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_NBS5AX_20160216T000000_20991231T235959_20180202T120000___________________MPC_O_AL_010.SEN3" role="SLSTR Visible and shortwave infrared (Visible-SWIR) characterisation data file S5 NADIR Stripe B">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_NBS6AX_20160216T000000_20991231T235959_20180202T120000___________________MPC_O_AL_010.SEN3" role="SLSTR Visible and shortwave infrared (Visible-SWIR) characterisation data file S6 NADIR Stripe B">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_N_F1AX_20160216T000000_20991231T235959_20170324T120000___________________MPC_O_AL_006.SEN3" role="SLSTR Thermal infrared (TIR) characterisation data file F1 NADIR">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_N_F2AX_20160216T000000_20991231T235959_20170324T120000___________________MPC_O_AL_006.SEN3" role="SLSTR Thermal infrared (TIR) characterisation data file F2 NADIR">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_N_S1AX_20160216T000000_20991231T235959_20180202T120000___________________MPC_O_AL_009.SEN3" role="SLSTR Visible and shortwave infrared (Visible-SWIR) characterisation data file S1 NADIR">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_N_S2AX_20160216T000000_20991231T235959_20180202T120000___________________MPC_O_AL_009.SEN3" role="SLSTR Visible and shortwave infrared (Visible-SWIR) characterisation data file S2 NADIR">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_N_S3AX_20160216T000000_20991231T235959_20180202T120000___________________MPC_O_AL_009.SEN3" role="SLSTR Visible and shortwave infrared (Visible-SWIR) characterisation data file S3 NADIR">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_N_S7AX_20160216T000000_20991231T235959_20170324T120000___________________MPC_O_AL_006.SEN3" role="SLSTR Thermal infrared (TIR) characterisation data file S7 NADIR">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_N_S8AX_20160216T000000_20991231T235959_20170324T120000___________________MPC_O_AL_006.SEN3" role="SLSTR Thermal infrared (TIR) characterisation data file S8 NADIR">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_N_S9AX_20160216T000000_20991231T235959_20170324T120000___________________MPC_O_AL_006.SEN3" role="SLSTR Thermal infrared (TIR) characterisation data file S9 NADIR">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_OAS4AX_20160418T094050_20991231T235959_20180202T120000___________________MPC_O_AL_012.SEN3" role="SLSTR Visible and shortwave infrared (Visible-SWIR) characterisation data file S4 OBLIQUE Stripe A">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_OAS5AX_20160418T094050_20991231T235959_20180202T120000___________________MPC_O_AL_012.SEN3" role="SLSTR Visible and shortwave infrared (Visible-SWIR) characterisation data file S5 OBLIQUE Stripe A">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_OAS6AX_20160418T094050_20991231T235959_20180202T120000___________________MPC_O_AL_012.SEN3" role="SLSTR Visible and shortwave infrared (Visible-SWIR) characterisation data file S6 OBLIQUE Stripe A">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_OBS4AX_20160418T094050_20991231T235959_20180202T120000___________________MPC_O_AL_012.SEN3" role="SLSTR Visible and shortwave infrared (Visible-SWIR) characterisation data file S4 OBLIQUE Stripe B">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_OBS5AX_20160418T094050_20991231T235959_20180202T120000___________________MPC_O_AL_012.SEN3" role="SLSTR Visible and shortwave infrared (Visible-SWIR) characterisation data file S5 OBLIQUE Stripe B">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_OBS6AX_20160418T094050_20991231T235959_20180202T120000___________________MPC_O_AL_012.SEN3" role="SLSTR Visible and shortwave infrared (Visible-SWIR) characterisation data file S6 OBLIQUE Stripe B">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_O_F1AX_20160216T000000_20991231T235959_20170324T120000___________________MPC_O_AL_006.SEN3" role="SLSTR Thermal infrared (TIR) characterisation data file F1 OBLIQUE">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_O_F2AX_20160216T000000_20991231T235959_20170324T120000___________________MPC_O_AL_006.SEN3" role="SLSTR Thermal infrared (TIR) characterisation data file F2 OBLIQUE">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_O_S1AX_20160418T094050_20991231T235959_20180202T120000___________________MPC_O_AL_011.SEN3" role="SLSTR Visible and shortwave infrared (Visible-SWIR) characterisation data file S1 OBLIQUE">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_O_S2AX_20160418T094050_20991231T235959_20180202T120000___________________MPC_O_AL_011.SEN3" role="SLSTR Visible and shortwave infrared (Visible-SWIR) characterisation data file S2 OBLIQUE">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_O_S3AX_20160418T094050_20991231T235959_20180202T120000___________________MPC_O_AL_011.SEN3" role="SLSTR Visible and shortwave infrared (Visible-SWIR) characterisation data file S3 OBLIQUE">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_O_S7AX_20160216T000000_20991231T235959_20170324T120000___________________MPC_O_AL_006.SEN3" role="SLSTR Thermal infrared (TIR) characterisation data file S7 OBLIQUE">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_O_S8AX_20160216T000000_20991231T235959_20170324T120000___________________MPC_O_AL_006.SEN3" role="SLSTR Thermal infrared (TIR) characterisation data file S8 OBLIQUE">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_O_S9AX_20160216T000000_20991231T235959_20170324T120000___________________MPC_O_AL_006.SEN3" role="SLSTR Thermal infrared (TIR) characterisation data file S9 OBLIQUE">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_PCP_AX_20160216T000000_20991231T235959_20180712T120000___________________MPC_O_AL_011.SEN3" role="SLSTR Processing Control Parameter File">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_RTT_AX_20160216T000000_20991231T235959_20180202T120000___________________MPC_O_AL_001.SEN3" role="SLSTR RTTOV Coefficients Data File">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_VIC_AX_20160216T000000_20991231T235959_20161012T120000___________________MPC_O_AL_004.SEN3" role="SLSTR Vicarious Calibration Data File">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_SL_1_VSC_AX_20180819T172041_20500101T000000_20180819T194230___________________MAR_O_NN____.SEN3" role="SLSTR VISCAL Data file">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="Marine Processing and Archiving Centre [MAR]" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="IPF-SL-1" version="06.16"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3__SL_2_LSTBAX_20000101T000000_20991231T235959_20151214T120000___________________MPC_O_AL_001.SEN3" role="SLSTR LST biome data file">
+                              <sentinel-safe:processing name="AdfProcessing">
+                                 <sentinel-safe:facility name="ESA Mission Performance Coordinating Centre (MPC)" organisation="ESA Mission Performance Coordinating Centre" site="Sophia Antipolis" country="France">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="ADC" version="1.0"/>
+                                 </sentinel-safe:facility>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_TM_0_NAT____20180819T174028_20180819T192037_20180819T192200_6008_034_369______MAR_O_AL_002.SEN3" role="Orbit File">
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_TM_0_NAT____20180819T174028_20180819T192037_20180819T192200_6008_034_369______MAR_O_AL_002.SEN3" role="L0 Product">
+                              <sentinel-safe:processing name="DataProcessing" outputLevel="0" start="2018-08-19T19:21:59.432775" stop="2018-08-19T19:22:42.561799">
+                                 <sentinel-safe:facility name="Marine Processing and Archiving Centre [MAR]" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="IPF-0" version="06.12"/>
+                                 </sentinel-safe:facility>
+                                 <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="Time Correlation File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="FOS Orbit File (Restituted)">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="Time Correlation File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="FOS Orbit File (Restituted)">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_AX___OSF_AX_20160216T192404_99991231T235959_20170322T163046___________________EUM_O_AL_001.SEN3" role="Reference Orbit Scenario File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_TM_0_NAT__G_20180819T174046_20180819T192055_20180819T192126_6009______________SVL_O_NR_OPE.ISIP" role="L0PP Granule">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3IPF PDS 001 - i1r8 - Product Data Format Specification - Level 0" role="Product Data Format Specification - Level 0">
+                                 </sentinel-safe:resource>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_TM_0_NAT____20180819T174028_20180819T192040_20180819T193240_6011_034_369______MAR_O_AL_002.SEN3" role="Orbit File">
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_TM_0_NAT____20180819T174028_20180819T192040_20180819T193240_6011_034_369______MAR_O_AL_002.SEN3" role="L0 Product">
+                              <sentinel-safe:processing name="DataProcessing" outputLevel="0" start="2018-08-19T19:32:39.209840" stop="2018-08-19T19:33:03.299518">
+                                 <sentinel-safe:facility name="Marine Processing and Archiving Centre [MAR]" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="IPF-0" version="06.12"/>
+                                 </sentinel-safe:facility>
+                                 <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="Time Correlation File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="FOS Orbit File (Restituted)">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="Time Correlation File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="FOS Orbit File (Restituted)">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_AX___OSF_AX_20160216T192404_99991231T235959_20170322T163046___________________EUM_O_AL_001.SEN3" role="Reference Orbit Scenario File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_TM_0_NAT__G_20180819T174046_20180819T192058_20180819T193128_6012______________SVL_O_NR_OPE.ISIP" role="L0PP Granule">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3IPF PDS 001 - i1r8 - Product Data Format Specification - Level 0" role="Product Data Format Specification - Level 0">
+                                 </sentinel-safe:resource>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_TM_0_NAT____20180819T192041_20180819T210057_20180819T210300_6016_034_370______MAR_O_AL_002.SEN3" role="Orbit File">
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_TM_0_NAT____20180819T192041_20180819T210057_20180819T210300_6016_034_370______MAR_O_AL_002.SEN3" role="L0 Product">
+                              <sentinel-safe:processing name="DataProcessing" outputLevel="0" start="2018-08-19T21:02:59.480806" stop="2018-08-19T21:03:42.857982">
+                                 <sentinel-safe:facility name="Marine Processing and Archiving Centre [MAR]" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="IPF-0" version="06.12"/>
+                                 </sentinel-safe:facility>
+                                 <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="Time Correlation File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="FOS Orbit File (Restituted)">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="Time Correlation File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="FOS Orbit File (Restituted)">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_AX___OSF_AX_20160216T192404_99991231T235959_20170322T163046___________________EUM_O_AL_001.SEN3" role="Reference Orbit Scenario File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_TM_0_NAT__G_20180819T192059_20180819T210115_20180819T210217_6016______________SVL_O_NR_OPE.ISIP" role="L0PP Granule">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3IPF PDS 001 - i1r8 - Product Data Format Specification - Level 0" role="Product Data Format Specification - Level 0">
+                                 </sentinel-safe:resource>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_TM_0_NAT____20180819T192041_20180819T210107_20180819T211301_6026_034_370______MAR_O_AL_002.SEN3" role="Orbit File">
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3A_TM_0_NAT____20180819T192041_20180819T210107_20180819T211301_6026_034_370______MAR_O_AL_002.SEN3" role="L0 Product">
+                              <sentinel-safe:processing name="DataProcessing" outputLevel="0" start="2018-08-19T21:12:59.880940" stop="2018-08-19T21:13:26.618220">
+                                 <sentinel-safe:facility name="Marine Processing and Archiving Centre [MAR]" organisation="European Organisation for the Exploitation of Meteorological Satellites" site="Darmstadt" country="Germany">
+                                    <sentinel-safe:hardware name="OPE"/>
+                                    <sentinel-safe:software name="IPF-0" version="06.12"/>
+                                 </sentinel-safe:facility>
+                                 <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="Time Correlation File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="FOS Orbit File (Restituted)">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="Time Correlation File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_AX___FRO_AX_20180816T000000_20180826T000000_20180819T064955___________________EUM_O_AL_001.SEN3" role="FOS Orbit File (Restituted)">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_AX___OSF_AX_20160216T192404_99991231T235959_20170322T163046___________________EUM_O_AL_001.SEN3" role="Reference Orbit Scenario File">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3A_TM_0_NAT__G_20180819T192059_20180819T210125_20180819T211151_6026______________SVL_O_NR_OPE.ISIP" role="L0PP Granule">
+                                 </sentinel-safe:resource>
+                                 <sentinel-safe:resource name="S3IPF PDS 001 - i1r8 - Product Data Format Specification - Level 0" role="Product Data Format Specification - Level 0">
+                                 </sentinel-safe:resource>
+                              </sentinel-safe:processing>
+                           </sentinel-safe:resource>
+                           <sentinel-safe:resource name="S3IPF PDS 005.1 - i2r8 - Product Data Format Specification - SLSTR Level 1" role="Product Data Format Specification - SLSTR">
+                           </sentinel-safe:resource>
+                        </sentinel-safe:processing>
+                     </sentinel-safe:resource>
+                  </sentinel-safe:processing>
+               </xmlData>
+            </metadataWrap>
+         </metadataObject>
+         <metadataObject ID="SLSTR_CARTESIAN_AN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_CARTESIAN_AN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_CARTESIAN_AO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_CARTESIAN_AO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_CARTESIAN_BN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_CARTESIAN_BN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_CARTESIAN_BO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_CARTESIAN_BO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_CARTESIAN_CN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_CARTESIAN_CN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_CARTESIAN_CO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_CARTESIAN_CO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_CARTESIAN_IN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_CARTESIAN_IN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_CARTESIAN_IO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_CARTESIAN_IO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_F1_QUALITY_IN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_F1_QUALITY_IN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_F1_QUALITY_IO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_F1_QUALITY_IO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_F2_QUALITY_IN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_F2_QUALITY_IN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_F2_QUALITY_IO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_F2_QUALITY_IO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_FLAGS_AN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_FLAGS_AN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_FLAGS_AO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_FLAGS_AO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_FLAGS_BN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_FLAGS_BN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_FLAGS_BO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_FLAGS_BO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_FLAGS_CN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_FLAGS_CN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_FLAGS_CO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_FLAGS_CO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_FLAGS_IN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_FLAGS_IN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_FLAGS_IO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_FLAGS_IO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_GEODETIC_AN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_GEODETIC_AN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_GEODETIC_AO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_GEODETIC_AO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_GEODETIC_BN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_GEODETIC_BN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_GEODETIC_BO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_GEODETIC_BO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_GEODETIC_CN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_GEODETIC_CN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_GEODETIC_CO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_GEODETIC_CO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_GEODETIC_IN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_GEODETIC_IN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_GEODETIC_IO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_GEODETIC_IO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_GEODETIC_TX_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_GEODETIC_TX_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_GEOMETRY_TN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_GEOMETRY_TN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_GEOMETRY_TO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_GEOMETRY_TO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_INDICES_AN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_INDICES_AN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_INDICES_AO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_INDICES_AO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_INDICES_BN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_INDICES_BN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_INDICES_BO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_INDICES_BO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_INDICES_CN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_INDICES_CN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_INDICES_CO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_INDICES_CO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_INDICES_IN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_INDICES_IN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_INDICES_IO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_INDICES_IO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_MET_TX_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_MET_TX_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S1_QUALITY_AN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S1_QUALITY_AN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S1_QUALITY_AO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S1_QUALITY_AO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S2_QUALITY_AN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S2_QUALITY_AN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S2_QUALITY_AO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S2_QUALITY_AO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S3_QUALITY_AN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S3_QUALITY_AN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S3_QUALITY_AO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S3_QUALITY_AO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S4_QUALITY_AN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S4_QUALITY_AN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S4_QUALITY_AO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S4_QUALITY_AO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S4_QUALITY_BN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S4_QUALITY_BN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S4_QUALITY_BO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S4_QUALITY_BO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S4_QUALITY_CN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S4_QUALITY_CN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S4_QUALITY_CO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S4_QUALITY_CO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S5_QUALITY_AN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S5_QUALITY_AN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S5_QUALITY_AO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S5_QUALITY_AO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S5_QUALITY_BN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S5_QUALITY_BN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S5_QUALITY_BO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S5_QUALITY_BO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S5_QUALITY_CN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S5_QUALITY_CN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S5_QUALITY_CO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S5_QUALITY_CO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S6_QUALITY_AN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S6_QUALITY_AN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S6_QUALITY_AO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S6_QUALITY_AO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S6_QUALITY_BN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S6_QUALITY_BN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S6_QUALITY_BO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S6_QUALITY_BO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S6_QUALITY_CN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S6_QUALITY_CN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S6_QUALITY_CO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S6_QUALITY_CO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S7_QUALITY_IN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S7_QUALITY_IN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S7_QUALITY_IO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S7_QUALITY_IO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S8_QUALITY_IN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S8_QUALITY_IN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S8_QUALITY_IO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S8_QUALITY_IO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S9_QUALITY_IN_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S9_QUALITY_IN_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_S9_QUALITY_IO_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_S9_QUALITY_IO_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_TIME_A_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_TIME_A_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_TIME_B_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_TIME_B_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_TIME_C_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_TIME_C_Data"/>
+         </metadataObject>
+         <metadataObject ID="SLSTR_TIME_I_Annotation" classification="DESCRIPTION" category="DMD">
+            <dataObjectPointer dataObjectID="SLSTR_TIME_I_Data"/>
+         </metadataObject>
+      </metadataSection>
+      <dataObjectSection>
+         <dataObject ID="ADFData">
+            <byteStream mimeType="application/x-netcdf" size="160336">
+               <fileLocation locatorType="URL" textInfo="VISCAL data obtained from input VISCAL ADF" href="./viscal.nc"/>
+               <checksum checksumName="MD5">28b7a2009eaf82ccece73e0071b89ad7</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_CARTESIAN_AN_Data">
+            <byteStream mimeType="application/x-netcdf" size="16847517">
+               <fileLocation locatorType="URL" textInfo="Full resolution cartesian coordinates for the A, B orTDI stripe grid, nadir or oblique view" href="./cartesian_an.nc"/>
+               <checksum checksumName="MD5">d6309afed12fe2f82bd30d7044a2ddb9</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_CARTESIAN_AO_Data">
+            <byteStream mimeType="application/x-netcdf" size="9619926">
+               <fileLocation locatorType="URL" textInfo="Full resolution cartesian coordinates for the A, B orTDI stripe grid, nadir or oblique view" href="./cartesian_ao.nc"/>
+               <checksum checksumName="MD5">cecb7dda40037a23d4d4e1712bfdd447</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_CARTESIAN_BN_Data">
+            <byteStream mimeType="application/x-netcdf" size="16784551">
+               <fileLocation locatorType="URL" textInfo="Full resolution cartesian coordinates for the A, B orTDI stripe grid, nadir or oblique view" href="./cartesian_bn.nc"/>
+               <checksum checksumName="MD5">baf4b3a32304e369406e781699eb2ec8</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_CARTESIAN_BO_Data">
+            <byteStream mimeType="application/x-netcdf" size="9699183">
+               <fileLocation locatorType="URL" textInfo="Full resolution cartesian coordinates for the A, B orTDI stripe grid, nadir or oblique view" href="./cartesian_bo.nc"/>
+               <checksum checksumName="MD5">9ecfcd993b9748a9c4ef11247eeedefd</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_CARTESIAN_CN_Data">
+            <byteStream mimeType="application/x-netcdf" size="16957271">
+               <fileLocation locatorType="URL" textInfo="Full resolution cartesian coordinates for the A, B orTDI stripe grid, nadir or oblique view" href="./cartesian_cn.nc"/>
+               <checksum checksumName="MD5">9d3cfcba08b764ea2d69ba2fd03dfdd7</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_CARTESIAN_CO_Data">
+            <byteStream mimeType="application/x-netcdf" size="9673757">
+               <fileLocation locatorType="URL" textInfo="Full resolution cartesian coordinates for the A, B orTDI stripe grid, nadir or oblique view" href="./cartesian_co.nc"/>
+               <checksum checksumName="MD5">e2a564a82b3c9c9c813a3c88366f40d6</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_CARTESIAN_IN_Data">
+            <byteStream mimeType="application/x-netcdf" size="4399232">
+               <fileLocation locatorType="URL" textInfo="Full resolution cartesian coordinates for the A, B orTDI stripe grid, nadir or oblique view" href="./cartesian_in.nc"/>
+               <checksum checksumName="MD5">62cec2029b5399966574dc65335c727c</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_CARTESIAN_IO_Data">
+            <byteStream mimeType="application/x-netcdf" size="2592784">
+               <fileLocation locatorType="URL" textInfo="Full resolution cartesian coordinates for the A, B orTDI stripe grid, nadir or oblique view" href="./cartesian_io.nc"/>
+               <checksum checksumName="MD5">5d2c671e95bee0833fc676ce772f9032</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_CARTESIAN_TX_Data">
+            <byteStream mimeType="application/x-netcdf" size="42392">
+               <fileLocation locatorType="URL" textInfo="Full resolution cartesian coordinates for the A, B orTDI stripe grid, nadir or oblique view" href="./cartesian_tx.nc"/>
+               <checksum checksumName="MD5">8f4156efc03752d19300f00a81bda36b</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_F1_BT_IN_Data">
+            <byteStream mimeType="application/x-netcdf" size="2718510">
+               <fileLocation locatorType="URL" textInfo="Gridded pixel brightness temperature for channel F1 (1km TIR grid, nadir view)" href="./F1_BT_in.nc"/>
+               <checksum checksumName="MD5">cce8773fd963bf55c1a6a6f892d6f00c</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_F1_BT_IO_Data">
+            <byteStream mimeType="application/x-netcdf" size="1438594">
+               <fileLocation locatorType="URL" textInfo="Gridded pixel brightness temperature for channel F1 (1km TIR grid, oblique view)" href="./F1_BT_io.nc"/>
+               <checksum checksumName="MD5">b350ea9f0b17fdd442bec53b9a4e5aed</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_F1_QUALITY_IN_Data">
+            <byteStream mimeType="application/x-netcdf" size="108960">
+               <fileLocation locatorType="URL" textInfo="Thermal Infrared quality annotations for channel F1 (1km TIR grid, nadir view)" href="./F1_quality_in.nc"/>
+               <checksum checksumName="MD5">e91e3cc3002f0898a44b6de28decf611</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_F1_QUALITY_IO_Data">
+            <byteStream mimeType="application/x-netcdf" size="110865">
+               <fileLocation locatorType="URL" textInfo="Thermal Infrared quality annotations for channel F1 (1km TIR grid, oblique view)" href="./F1_quality_io.nc"/>
+               <checksum checksumName="MD5">7b377b1dad9899e9deb94abc3ba3669b</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_F2_BT_IN_Data">
+            <byteStream mimeType="application/x-netcdf" size="2664072">
+               <fileLocation locatorType="URL" textInfo="Gridded pixel brightness temperature for channel F2 (1km TIR grid, nadir view)" href="./F2_BT_in.nc"/>
+               <checksum checksumName="MD5">a0248ecdbaa3b3326ab02435649aad0c</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_F2_BT_IO_Data">
+            <byteStream mimeType="application/x-netcdf" size="1505689">
+               <fileLocation locatorType="URL" textInfo="Gridded pixel brightness temperature for channel F1 (1km TIR grid, oblique view)" href="./F2_BT_io.nc"/>
+               <checksum checksumName="MD5">a74dd59e4445741b09a92fa129cc3aed</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_F2_QUALITY_IN_Data">
+            <byteStream mimeType="application/x-netcdf" size="109002">
+               <fileLocation locatorType="URL" textInfo="Thermal Infrared quality annotations for channel F2 (1km TIR grid, nadir view)" href="./F2_quality_in.nc"/>
+               <checksum checksumName="MD5">e75d0b7ea680af83800b2bef9aa74876</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_F2_QUALITY_IO_Data">
+            <byteStream mimeType="application/x-netcdf" size="111079">
+               <fileLocation locatorType="URL" textInfo="Thermal Infrared quality annotations for channel F2 (1km TIR grid, oblique view)" href="./F2_quality_io.nc"/>
+               <checksum checksumName="MD5">5cac470153cbffe7c77ced4607661553</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_FLAGS_AN_Data">
+            <byteStream mimeType="application/x-netcdf" size="2896742">
+               <fileLocation locatorType="URL" textInfo="Global flags for the A, B or TDI stripe grid, nadir or oblique view" href="./flags_an.nc"/>
+               <checksum checksumName="MD5">1d1c1ac60aea620b09dc43a91144c189</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_FLAGS_AO_Data">
+            <byteStream mimeType="application/x-netcdf" size="1648220">
+               <fileLocation locatorType="URL" textInfo="Global flags for the A, B or TDI stripe grid, nadir or oblique view" href="./flags_ao.nc"/>
+               <checksum checksumName="MD5">b6111191a28914ddce404f3b5c9d3569</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_FLAGS_BN_Data">
+            <byteStream mimeType="application/x-netcdf" size="2879795">
+               <fileLocation locatorType="URL" textInfo="Global flags for the A, B or TDI stripe grid, nadir or oblique view" href="./flags_bn.nc"/>
+               <checksum checksumName="MD5">464591137a46c9cff8d696126c53a5c4</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_FLAGS_BO_Data">
+            <byteStream mimeType="application/x-netcdf" size="1691705">
+               <fileLocation locatorType="URL" textInfo="Global flags for the A, B or TDI stripe grid, nadir or oblique view" href="./flags_bo.nc"/>
+               <checksum checksumName="MD5">2b0935979a4d2aa4873fe94639cc632a</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_FLAGS_CN_Data">
+            <byteStream mimeType="application/x-netcdf" size="2888058">
+               <fileLocation locatorType="URL" textInfo="Global flags for the A, B or TDI stripe grid, nadir or oblique view" href="./flags_cn.nc"/>
+               <checksum checksumName="MD5">93b49ec75d40d00e88281420db9628fc</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_FLAGS_CO_Data">
+            <byteStream mimeType="application/x-netcdf" size="1669596">
+               <fileLocation locatorType="URL" textInfo="Global flags for the A, B or TDI stripe grid, nadir or oblique view" href="./flags_co.nc"/>
+               <checksum checksumName="MD5">e06209d9924da29ca81f0f19bd79a712</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_FLAGS_IN_Data">
+            <byteStream mimeType="application/x-netcdf" size="1403190">
+               <fileLocation locatorType="URL" textInfo="Global flags for the A, B or TDI stripe grid, nadir or oblique view" href="./flags_in.nc"/>
+               <checksum checksumName="MD5">5cab362b16a0d92ef4973358350da3a5</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_FLAGS_IO_Data">
+            <byteStream mimeType="application/x-netcdf" size="757278">
+               <fileLocation locatorType="URL" textInfo="Global flags for the A, B or TDI stripe grid, nadir or oblique view" href="./flags_io.nc"/>
+               <checksum checksumName="MD5">f854bc6cb7e803b2f9459b327d78ab88</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_GEODETIC_AN_Data">
+            <byteStream mimeType="application/x-netcdf" size="28094829">
+               <fileLocation locatorType="URL" textInfo="Full resolution geodetic coordinates for the A, B or TDI stripe grid, nadir or oblique view" href="./geodetic_an.nc"/>
+               <checksum checksumName="MD5">525be3859830fec76a8971dabe0c7a99</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_GEODETIC_AO_Data">
+            <byteStream mimeType="application/x-netcdf" size="16594389">
+               <fileLocation locatorType="URL" textInfo="Full resolution geodetic coordinates for the A, B or TDI stripe grid, nadir or oblique view" href="./geodetic_ao.nc"/>
+               <checksum checksumName="MD5">7aa0fbd2cd2cde7953e577733813e54f</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_GEODETIC_BN_Data">
+            <byteStream mimeType="application/x-netcdf" size="27923545">
+               <fileLocation locatorType="URL" textInfo="Full resolution geodetic coordinates for the A, B or TDI stripe grid, nadir or oblique view" href="./geodetic_bn.nc"/>
+               <checksum checksumName="MD5">86b5c411857d5d972605fa4533937191</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_GEODETIC_BO_Data">
+            <byteStream mimeType="application/x-netcdf" size="16701338">
+               <fileLocation locatorType="URL" textInfo="Full resolution geodetic coordinates for the A, B or TDI stripe grid, nadir or oblique view" href="./geodetic_bo.nc"/>
+               <checksum checksumName="MD5">6cb4f3c75c840095f61a42ee814754d7</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_GEODETIC_CN_Data">
+            <byteStream mimeType="application/x-netcdf" size="27963071">
+               <fileLocation locatorType="URL" textInfo="Full resolution geodetic coordinates for the A, B or TDI stripe grid, nadir or oblique view" href="./geodetic_cn.nc"/>
+               <checksum checksumName="MD5">de358577720b62c011c1281447bab190</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_GEODETIC_CO_Data">
+            <byteStream mimeType="application/x-netcdf" size="16635269">
+               <fileLocation locatorType="URL" textInfo="Full resolution geodetic coordinates for the A, B or TDI stripe grid, nadir or oblique view" href="./geodetic_co.nc"/>
+               <checksum checksumName="MD5">a13cfa4810459087ac45afcff3dba49f</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_GEODETIC_IN_Data">
+            <byteStream mimeType="application/x-netcdf" size="7527539">
+               <fileLocation locatorType="URL" textInfo="Full resolution geodetic coordinates for the A, B or TDI stripe grid, nadir or oblique view" href="./geodetic_in.nc"/>
+               <checksum checksumName="MD5">4b4773f9742a456e28fcb0c54dacbdd3</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_GEODETIC_IO_Data">
+            <byteStream mimeType="application/x-netcdf" size="4644043">
+               <fileLocation locatorType="URL" textInfo="Full resolution geodetic coordinates for the A, B or TDI stripe grid, nadir or oblique view" href="./geodetic_io.nc"/>
+               <checksum checksumName="MD5">b213bf80e30b073c5004b78025e3b957</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_GEODETIC_TX_Data">
+            <byteStream mimeType="application/x-netcdf" size="1638409">
+               <fileLocation locatorType="URL" textInfo="Full resolution geodetic coordinates for the A, B or TDI stripe grid, nadir or oblique view" href="./geodetic_tx.nc"/>
+               <checksum checksumName="MD5">c604234728b0583d3fee782b24217ae5</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_GEOMETRY_TN_Data">
+            <byteStream mimeType="application/x-netcdf" size="3367366">
+               <fileLocation locatorType="URL" textInfo="solar and satellite geometry annotations, nadir or oblique view" href="./geometry_tn.nc"/>
+               <checksum checksumName="MD5">8d6fda4db8972ac17d49fe96006c2bfb</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_GEOMETRY_TO_Data">
+            <byteStream mimeType="application/x-netcdf" size="1878828">
+               <fileLocation locatorType="URL" textInfo="solar and satellite geometry annotations, nadir or oblique view" href="./geometry_to.nc"/>
+               <checksum checksumName="MD5">ba1ad395521d00a35146e359427c86fd</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_INDICES_AN_Data">
+            <byteStream mimeType="application/x-netcdf" size="2877102">
+               <fileLocation locatorType="URL" textInfo="Scan, pixel and detector annotations for the A, B or TDI stripe grid, nadir or oblique view" href="./indices_an.nc"/>
+               <checksum checksumName="MD5">d121f1aa99c86852ea1376385941ee0d</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_INDICES_AO_Data">
+            <byteStream mimeType="application/x-netcdf" size="2061771">
+               <fileLocation locatorType="URL" textInfo="Scan, pixel and detector annotations for the A, B or TDI stripe grid, nadir or oblique view" href="./indices_ao.nc"/>
+               <checksum checksumName="MD5">49391aac186ee3ba1e64b1023af34dec</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_INDICES_BN_Data">
+            <byteStream mimeType="application/x-netcdf" size="2884369">
+               <fileLocation locatorType="URL" textInfo="Scan, pixel and detector annotations for the A, B or TDI stripe grid, nadir or oblique view" href="./indices_bn.nc"/>
+               <checksum checksumName="MD5">a223004ca72229057ece9f62becddfee</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_INDICES_BO_Data">
+            <byteStream mimeType="application/x-netcdf" size="2079635">
+               <fileLocation locatorType="URL" textInfo="Scan, pixel and detector annotations for the A, B or TDI stripe grid, nadir or oblique view" href="./indices_bo.nc"/>
+               <checksum checksumName="MD5">70731d52f00271d99a1bbf2cb64d75d3</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_INDICES_CN_Data">
+            <byteStream mimeType="application/x-netcdf" size="2868743">
+               <fileLocation locatorType="URL" textInfo="Scan, pixel and detector annotations for the A, B or TDI stripe grid, nadir or oblique view" href="./indices_cn.nc"/>
+               <checksum checksumName="MD5">19d6eac5591b085fcf241306e637a83e</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_INDICES_CO_Data">
+            <byteStream mimeType="application/x-netcdf" size="2073717">
+               <fileLocation locatorType="URL" textInfo="Scan, pixel and detector annotations for the A, B or TDI stripe grid, nadir or oblique view" href="./indices_co.nc"/>
+               <checksum checksumName="MD5">19d8bfc6cc81280cba7dff11058cf4f7</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_INDICES_IN_Data">
+            <byteStream mimeType="application/x-netcdf" size="832119">
+               <fileLocation locatorType="URL" textInfo="Scan, pixel and detector annotations for the A, B or TDI stripe grid, nadir or oblique view" href="./indices_in.nc"/>
+               <checksum checksumName="MD5">7490dc81be0507a2afea9c69e5ebc5d8</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_INDICES_IO_Data">
+            <byteStream mimeType="application/x-netcdf" size="532314">
+               <fileLocation locatorType="URL" textInfo="Scan, pixel and detector annotations for the A, B or TDI stripe grid, nadir or oblique view" href="./indices_io.nc"/>
+               <checksum checksumName="MD5">e823696246cce1c7a0e4f353cfdd6e82</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_MET_TX_Data">
+            <byteStream mimeType="application/x-netcdf" size="35444376">
+               <fileLocation locatorType="URL" textInfo="Meteorological parameters regridded onto the tie points" href="./met_tx.nc"/>
+               <checksum checksumName="MD5">6572203aa3d5dd66263bc3332ea146f1</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S1_QUALITY_AN_Data">
+            <byteStream mimeType="application/x-netcdf" size="72751">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S1 (A stripe grid, nadir view)" href="./S1_quality_an.nc"/>
+               <checksum checksumName="MD5">a97bd39e3687ce49927c199ccd23e54b</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S1_QUALITY_AO_Data">
+            <byteStream mimeType="application/x-netcdf" size="74510">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S1 (A stripe grid, oblique view)" href="./S1_quality_ao.nc"/>
+               <checksum checksumName="MD5">8dceb07c6990f525adb87963918b328b</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S1_RAD_AN_Data">
+            <byteStream mimeType="application/x-netcdf" size="12458266">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S1 (A stripe grid, nadir view)" href="./S1_radiance_an.nc"/>
+               <checksum checksumName="MD5">ec2c6214ff9bacbbdac3e0e1708b99e0</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S1_RAD_AO_Data">
+            <byteStream mimeType="application/x-netcdf" size="6715254">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S1 (A stripe grid, oblique view)" href="./S1_radiance_ao.nc"/>
+               <checksum checksumName="MD5">c2ae929a74716339ec64913f41793f73</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S2_QUALITY_AN_Data">
+            <byteStream mimeType="application/x-netcdf" size="72600">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S2 (A stripe grid, nadir view)" href="./S2_quality_an.nc"/>
+               <checksum checksumName="MD5">9734cfdfe083fa4d28d684a7592d491e</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S2_QUALITY_AO_Data">
+            <byteStream mimeType="application/x-netcdf" size="74153">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S2 (A stripe grid, oblique view)" href="./S2_quality_ao.nc"/>
+               <checksum checksumName="MD5">ed2a9c8879eb704e3e0d5be59780584e</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S2_RAD_AN_Data">
+            <byteStream mimeType="application/x-netcdf" size="12531539">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S2 (A stripe grid, nadir view)" href="./S2_radiance_an.nc"/>
+               <checksum checksumName="MD5">01755626582066eb430b807328f30ad0</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S2_RAD_AO_Data">
+            <byteStream mimeType="application/x-netcdf" size="6751902">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S2 (A stripe grid, oblique view)" href="./S2_radiance_ao.nc"/>
+               <checksum checksumName="MD5">f97e67af660a28ab933ff035727e9a6e</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S3_QUALITY_AN_Data">
+            <byteStream mimeType="application/x-netcdf" size="72717">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S3 (A stripe grid, nadir view)" href="./S3_quality_an.nc"/>
+               <checksum checksumName="MD5">00ad1095d5f134b3ab2d3fbb1298f002</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S3_QUALITY_AO_Data">
+            <byteStream mimeType="application/x-netcdf" size="74368">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S3 (A stripe grid, oblique view)" href="./S3_quality_ao.nc"/>
+               <checksum checksumName="MD5">977b96fe66fedecf42cb83773c73cd1a</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S3_RAD_AN_Data">
+            <byteStream mimeType="application/x-netcdf" size="12577265">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S3 (A stripe grid, nadir view)" href="./S3_radiance_an.nc"/>
+               <checksum checksumName="MD5">a81cf0f335e8f8713caa68a41369668d</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S3_RAD_AO_Data">
+            <byteStream mimeType="application/x-netcdf" size="6790904">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S3 (A stripe grid, oblique view)" href="./S3_radiance_ao.nc"/>
+               <checksum checksumName="MD5">51102029f7e1eebf3e9de9ccdb1bdc1d</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S4_QUALITY_AN_Data">
+            <byteStream mimeType="application/x-netcdf" size="83118">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S4 (A stripe grid, nadir view)" href="./S4_quality_an.nc"/>
+               <checksum checksumName="MD5">31281b05802051d22148f1733e1561cf</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S4_QUALITY_AO_Data">
+            <byteStream mimeType="application/x-netcdf" size="88423">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S4 (A stripe grid, oblique view)" href="./S4_quality_ao.nc"/>
+               <checksum checksumName="MD5">54fdeb5e1ae9c11cb0bcb443626489d7</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S4_QUALITY_BN_Data">
+            <byteStream mimeType="application/x-netcdf" size="82960">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S4 (B stripe grid, nadir view)" href="./S4_quality_bn.nc"/>
+               <checksum checksumName="MD5">77617f550a8e650c41ab239b67c5b317</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S4_QUALITY_BO_Data">
+            <byteStream mimeType="application/x-netcdf" size="88569">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S4 (B stripe grid, oblique view)" href="./S4_quality_bo.nc"/>
+               <checksum checksumName="MD5">024a4a6cbe9950dc1d7eff655796f10a</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S4_QUALITY_CN_Data">
+            <byteStream mimeType="application/x-netcdf" size="83001">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S4 (TDI stripe grid, nadir view)" href="./S4_quality_cn.nc"/>
+               <checksum checksumName="MD5">cdaad4f20675ec5a1d01dc44431f4d39</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S4_QUALITY_CO_Data">
+            <byteStream mimeType="application/x-netcdf" size="88554">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S4 (TDI stripe grid, oblique view)" href="./S4_quality_co.nc"/>
+               <checksum checksumName="MD5">13b6dbdb819a23716d0f6157bb748693</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S4_RAD_AN_Data">
+            <byteStream mimeType="application/x-netcdf" size="10064030">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S4 (A stripe grid, nadir view)" href="./S4_radiance_an.nc"/>
+               <checksum checksumName="MD5">226af3b75c58fe026e042549b4591eef</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S4_RAD_AO_Data">
+            <byteStream mimeType="application/x-netcdf" size="5836117">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S4 (A stripe grid, oblique view)" href="./S4_radiance_ao.nc"/>
+               <checksum checksumName="MD5">728a4b70f6b4159ea6c9c76256d8ef6d</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S4_RAD_BN_Data">
+            <byteStream mimeType="application/x-netcdf" size="10207666">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S4 (B stripe grid, nadir view)" href="./S4_radiance_bn.nc"/>
+               <checksum checksumName="MD5">5202522f1a4c554540dc0ba35d617f31</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S4_RAD_BO_Data">
+            <byteStream mimeType="application/x-netcdf" size="5954973">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S4 (B stripe grid, oblique view)" href="./S4_radiance_bo.nc"/>
+               <checksum checksumName="MD5">e3e3ef8f16bd4acd2b99f44c2e22dbc2</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S4_RAD_CN_Data">
+            <byteStream mimeType="application/x-netcdf" size="9991348">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S4 (TDI stripe grid, nadir view)" href="./S4_radiance_cn.nc"/>
+               <checksum checksumName="MD5">9f9a993807903e77db31060794a46add</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S4_RAD_CO_Data">
+            <byteStream mimeType="application/x-netcdf" size="5841295">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S4 (TDI stripe grid, oblique view)" href="./S4_radiance_co.nc"/>
+               <checksum checksumName="MD5">5989f2eebbf53a3b20e323a041115528</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S5_QUALITY_AN_Data">
+            <byteStream mimeType="application/x-netcdf" size="82574">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S5 (A stripe grid, nadir view)" href="./S5_quality_an.nc"/>
+               <checksum checksumName="MD5">2eaf6d042e67eaebcdccf1f2380ec288</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S5_QUALITY_AO_Data">
+            <byteStream mimeType="application/x-netcdf" size="87958">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S5 (A stripe grid, oblique view)" href="./S5_quality_ao.nc"/>
+               <checksum checksumName="MD5">bd1fe0ed0e5ebcc4029c148053d86127</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S5_QUALITY_BN_Data">
+            <byteStream mimeType="application/x-netcdf" size="82485">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S5 (B stripe grid, nadir view)" href="./S5_quality_bn.nc"/>
+               <checksum checksumName="MD5">fc6f63073f1992fac851d89e031462f8</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S5_QUALITY_BO_Data">
+            <byteStream mimeType="application/x-netcdf" size="88037">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S5 (B stripe grid, oblique view)" href="./S5_quality_bo.nc"/>
+               <checksum checksumName="MD5">7bf398a5bcc722b348467e662256b7c0</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S5_QUALITY_CN_Data">
+            <byteStream mimeType="application/x-netcdf" size="82560">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S5 (TDI stripe grid, nadir view)" href="./S5_quality_cn.nc"/>
+               <checksum checksumName="MD5">cef6f037a676b4df7db3011ffc0d5700</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S5_QUALITY_CO_Data">
+            <byteStream mimeType="application/x-netcdf" size="88031">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S5 (TDI stripe grid, oblique view)" href="./S5_quality_co.nc"/>
+               <checksum checksumName="MD5">ab0e4d6c568f12f842d7644819980974</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S5_RAD_AN_Data">
+            <byteStream mimeType="application/x-netcdf" size="11990069">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S5 (A stripe grid, nadir view)" href="./S5_radiance_an.nc"/>
+               <checksum checksumName="MD5">67aa74f419b2c52c4d3a0b83f3e1b31e</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S5_RAD_AO_Data">
+            <byteStream mimeType="application/x-netcdf" size="6453479">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S5 (A stripe grid, oblique view)" href="./S5_radiance_ao.nc"/>
+               <checksum checksumName="MD5">d174b3fad1e7a2d0be5b658e3db04d63</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S5_RAD_BN_Data">
+            <byteStream mimeType="application/x-netcdf" size="11940600">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S5 (B stripe grid, nadir view)" href="./S5_radiance_bn.nc"/>
+               <checksum checksumName="MD5">2ad8dda39a5354005961d2daa91d33c5</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S5_RAD_BO_Data">
+            <byteStream mimeType="application/x-netcdf" size="6498190">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S5 (B stripe grid, oblique view)" href="./S5_radiance_bo.nc"/>
+               <checksum checksumName="MD5">8cb896f1478590bc44015aae79aed1a7</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S5_RAD_CN_Data">
+            <byteStream mimeType="application/x-netcdf" size="11908579">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S5 (TDI stripe grid, nadir view)" href="./S5_radiance_cn.nc"/>
+               <checksum checksumName="MD5">5c08a86ffa5182b7e849e3a3ee19efbf</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S5_RAD_CO_Data">
+            <byteStream mimeType="application/x-netcdf" size="6460301">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S5 (TDI stripe grid, oblique view)" href="./S5_radiance_co.nc"/>
+               <checksum checksumName="MD5">fc34b12969e6b41e2828f74b13a20d3a</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S6_QUALITY_AN_Data">
+            <byteStream mimeType="application/x-netcdf" size="82669">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S6 (A stripe grid, nadir view)" href="./S6_quality_an.nc"/>
+               <checksum checksumName="MD5">f03529e50ff70271fd9f02823783503a</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S6_QUALITY_AO_Data">
+            <byteStream mimeType="application/x-netcdf" size="87719">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S6 (A stripe grid, oblique view)" href="./S6_quality_ao.nc"/>
+               <checksum checksumName="MD5">3212953b8e55a2ba8bac13b771af6bd5</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S6_QUALITY_BN_Data">
+            <byteStream mimeType="application/x-netcdf" size="82557">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S6 (B stripe grid, nadir view)" href="./S6_quality_bn.nc"/>
+               <checksum checksumName="MD5">b1baa855792eacabe033bfff754623a9</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S6_QUALITY_BO_Data">
+            <byteStream mimeType="application/x-netcdf" size="87896">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S6 (B stripe grid, oblique view)" href="./S6_quality_bo.nc"/>
+               <checksum checksumName="MD5">419fe61097f2365c8af9f65aa958ff55</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S6_QUALITY_CN_Data">
+            <byteStream mimeType="application/x-netcdf" size="82639">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S6 (TDI stripe grid, nadir view)" href="./S6_quality_cn.nc"/>
+               <checksum checksumName="MD5">c13424e9734a987e03febd30cc954def</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S6_QUALITY_CO_Data">
+            <byteStream mimeType="application/x-netcdf" size="87743">
+               <fileLocation locatorType="URL" textInfo="Visible and Shortwave IR quality annotations for channel S6 (TDI stripe grid, oblique view)" href="./S6_quality_co.nc"/>
+               <checksum checksumName="MD5">681c8cf6d3a540bb5a56b60e59ac5147</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S6_RAD_AN_Data">
+            <byteStream mimeType="application/x-netcdf" size="11712540">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S6 (A stripe grid, nadir view)" href="./S6_radiance_an.nc"/>
+               <checksum checksumName="MD5">976141c00305283e5dd84c13bee1c227</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S6_RAD_AO_Data">
+            <byteStream mimeType="application/x-netcdf" size="6339139">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S6 (A stripe grid, oblique view)" href="./S6_radiance_ao.nc"/>
+               <checksum checksumName="MD5">b767476485377a203f5cda328614391a</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S6_RAD_BN_Data">
+            <byteStream mimeType="application/x-netcdf" size="11663974">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S6 (B stripe grid, nadir view)" href="./S6_radiance_bn.nc"/>
+               <checksum checksumName="MD5">fa9be16503a3934e452e148b3f9561c1</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S6_RAD_BO_Data">
+            <byteStream mimeType="application/x-netcdf" size="6401076">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S6 (B stripe grid, oblique view)" href="./S6_radiance_bo.nc"/>
+               <checksum checksumName="MD5">7df31dd998fff12547f7875230facc81</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S6_RAD_CN_Data">
+            <byteStream mimeType="application/x-netcdf" size="11619512">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S6 (TDI stripe grid, nadir view)" href="./S6_radiance_cn.nc"/>
+               <checksum checksumName="MD5">aa443fa746cbaf66c94def861f17e05a</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S6_RAD_CO_Data">
+            <byteStream mimeType="application/x-netcdf" size="6349253">
+               <fileLocation locatorType="URL" textInfo="TOA radiance for channel S6 (TDI stripe grid, oblique view)" href="./S6_radiance_co.nc"/>
+               <checksum checksumName="MD5">17f060d38d1f3116a9f97078fce254a3</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S7_BT_IN_Data">
+            <byteStream mimeType="application/x-netcdf" size="2474559">
+               <fileLocation locatorType="URL" textInfo="Gridded pixel brightness temperature for channel S7 (1km TIR grid, nadir view)" href="./S7_BT_in.nc"/>
+               <checksum checksumName="MD5">7122fd2f35ce94bcc21af9cd55949755</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S7_BT_IO_Data">
+            <byteStream mimeType="application/x-netcdf" size="1437782">
+               <fileLocation locatorType="URL" textInfo="Gridded pixel brightness temperature for channel S7 (1km TIR grid, oblique view)" href="./S7_BT_io.nc"/>
+               <checksum checksumName="MD5">de9c93be5397b98fed4ab201cfe76084</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S7_QUALITY_IN_Data">
+            <byteStream mimeType="application/x-netcdf" size="122260">
+               <fileLocation locatorType="URL" textInfo="Thermal Infrared quality annotations for channel S7 (1km TIR grid, nadir view)" href="./S7_quality_in.nc"/>
+               <checksum checksumName="MD5">cd863804400c4c404a5ad36cfef2b9b7</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S7_QUALITY_IO_Data">
+            <byteStream mimeType="application/x-netcdf" size="125664">
+               <fileLocation locatorType="URL" textInfo="Thermal Infrared quality annotations for channel S7 (1km TIR grid, oblique view)" href="./S7_quality_io.nc"/>
+               <checksum checksumName="MD5">1c3cfd3552baa051953aac8831def851</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S8_BT_IN_Data">
+            <byteStream mimeType="application/x-netcdf" size="2652587">
+               <fileLocation locatorType="URL" textInfo="Gridded pixel brightness temperature for channel S8 (1km TIR grid, nadir view)" href="./S8_BT_in.nc"/>
+               <checksum checksumName="MD5">72bbee7a177ac3132faee327b9b45202</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S8_BT_IO_Data">
+            <byteStream mimeType="application/x-netcdf" size="1498391">
+               <fileLocation locatorType="URL" textInfo="Gridded pixel brightness temperature for channel S8 (1km TIR grid, oblique view)" href="./S8_BT_io.nc"/>
+               <checksum checksumName="MD5">a141f9ea7b0f579bf21983fdc36f6bb8</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S8_QUALITY_IN_Data">
+            <byteStream mimeType="application/x-netcdf" size="117835">
+               <fileLocation locatorType="URL" textInfo="Thermal Infrared quality annotations for channel S8 (1km TIR grid, nadir view)" href="./S8_quality_in.nc"/>
+               <checksum checksumName="MD5">daef36f201f7f0f734095a05ef116b42</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S8_QUALITY_IO_Data">
+            <byteStream mimeType="application/x-netcdf" size="121001">
+               <fileLocation locatorType="URL" textInfo="Thermal Infrared quality annotations for channel S8 (1km TIR grid, oblique view)" href="./S8_quality_io.nc"/>
+               <checksum checksumName="MD5">f6f5c32943a2974473b8c63c2fdacef8</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S9_BT_IN_Data">
+            <byteStream mimeType="application/x-netcdf" size="2630169">
+               <fileLocation locatorType="URL" textInfo="Gridded pixel brightness temperature for channel S9 (1km TIR grid, nadir view)" href="./S9_BT_in.nc"/>
+               <checksum checksumName="MD5">56a61c79d95664b9dcda03b2d65c8801</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S9_BT_IO_Data">
+            <byteStream mimeType="application/x-netcdf" size="1489902">
+               <fileLocation locatorType="URL" textInfo="Gridded pixel brightness temperature for channel S9 (1km TIR grid, oblique view)" href="./S9_BT_io.nc"/>
+               <checksum checksumName="MD5">1a1ab2a70ad065be348277538a2d9311</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S9_QUALITY_IN_Data">
+            <byteStream mimeType="application/x-netcdf" size="118286">
+               <fileLocation locatorType="URL" textInfo="Thermal Infrared quality annotations for channel S9 (1km TIR grid, nadir view)" href="./S9_quality_in.nc"/>
+               <checksum checksumName="MD5">be2aa2628e6b3b93c1abdbc8c4b74371</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_S9_QUALITY_IO_Data">
+            <byteStream mimeType="application/x-netcdf" size="121359">
+               <fileLocation locatorType="URL" textInfo="Thermal Infrared quality annotations for channel S9 (1km TIR grid, oblique view)" href="./S9_quality_io.nc"/>
+               <checksum checksumName="MD5">d3c3c066f722733d0ac62964de6a3b58</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_TIME_A_Data">
+            <byteStream mimeType="application/x-netcdf" size="60278">
+               <fileLocation locatorType="URL" textInfo="Time annotations for the A, B or TDI stripe grid, nadir and oblique view" href="./time_an.nc"/>
+               <checksum checksumName="MD5">148fdd52b00c23b9b04ec39d05f566dc</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_TIME_B_Data">
+            <byteStream mimeType="application/x-netcdf" size="60441">
+               <fileLocation locatorType="URL" textInfo="Time annotations for the A, B or TDI stripe grid, nadir and oblique view" href="./time_bn.nc"/>
+               <checksum checksumName="MD5">6f03ba62e726c4a97f2bdd1252a4bdb8</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_TIME_C_Data">
+            <byteStream mimeType="application/x-netcdf" size="58867">
+               <fileLocation locatorType="URL" textInfo="Time annotations for the A, B or TDI stripe grid, nadir and oblique view" href="./time_cn.nc"/>
+               <checksum checksumName="MD5">b3fe30f2c31591e3f9beeb894162b804</checksum>
+            </byteStream>
+         </dataObject>
+         <dataObject ID="SLSTR_TIME_I_Data">
+            <byteStream mimeType="application/x-netcdf" size="57967">
+               <fileLocation locatorType="URL" textInfo="Time annotations for the A, B or TDI stripe grid, nadir and oblique view" href="./time_in.nc"/>
+               <checksum checksumName="MD5">d90107e22121317fa45f1cb736bf3ea0</checksum>
+            </byteStream>
+         </dataObject>
+      </dataObjectSection>
+   </xfdu:XFDU>
+
